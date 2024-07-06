@@ -5,16 +5,25 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          black: "#0A0A0A",
-          text: "#FF8819",
+          50: "#fff4ed",
+          100: "#ffe6d5",
+          200: "#fecaaa",
+          300: "#fea473",
+          400: "#fc743b",
+          500: "#fa541c",
+          600: "#eb350b",
+          700: "#c3240b",
+          800: "#9b1e11",
+          900: "#7c1c12",
+          950: "#430b07",
+        },
+        secondary: {
+          50: "#eeeeee",
         },
       },
     },
     fontFamily: {
-      redhat: ["Red Hat Display", "sans-serif"],
-      leaguegothic: ["League Gothic", "sans-serif"],
-      leaguespartan: ["League Spartan", "sans-serif"],
-      shadowsintolight: ["Shadows Into Light", "cursive"],
+      sans: ["Manrope", "sans-serif"],
     },
   },
   plugins: [],

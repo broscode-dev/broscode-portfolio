@@ -10,31 +10,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- Wrapper -->
-    <div class="min-h-dvh w-full bg-primary-black text-primary-text px-20">
+    <div class="min-h-dvh w-full flex flex-col gap-5 px-20 bg-secondary-50">
       <!-- NavBar -->
       <nav
-        class="w-full flex items-center justify-between py-5 text-base font-semibold"
+        class="w-full flex items-center justify-between py-1 text-base font-semibold"
       >
         <div class="flex gap-2">
           <img src="./assets/instadp.png" alt="BrosCode Logo" class="w-32" />
-          <h3>BrosCode</h3>
         </div>
 
-        <!-- </div> -->
+        <!-- navs -->
         <div class="flex items-center gap-5">
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Work</a>
-          <a href="#">Experience</a>
-          <a href="#">Contact</a>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Works</a>
+          <a href="#">Pricing</a>
+        </div>
+
+        <!-- social-links -->
+        <div class="flex items-center gap-5">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <button class="p-3 text-white bg-primary-500 rounded-full">
+            Contact Us
+          </button>
         </div>
       </nav>
+      <!-- hero section -->
+      <div class="flex gap-2 items-center">
+        <!-- left section -->
+        <div class="flex flex-col gap-5 flex-1">
+          <!-- tagline -->
+          <h1>
+            Brothers who code <br />
+            your dream website!
+          </h1>
+          <!-- intro -->
+          <p>
+            Let's build your online presence together with Broscode, using the
+            latest web technologies for your business needs.
+          </p>
+          <!-- CTA -->
+          <div class="flex items-center gap-2">
+            <button class="p-3 text-white bg-gray-900 rounded-full">
+              Get a Free Quote
+            </button>
+            <button class="p-3 text-white bg-primary-500 rounded-full">
+              See Our Works
+            </button>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="flex-1">
+          <img src="./assets/hero.svg" alt="Hero" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
