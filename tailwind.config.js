@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: {
           black: "#0A0A0A",
-          text: "#EEE5E0",
+          text: "#FF8819",
         },
       },
     },
