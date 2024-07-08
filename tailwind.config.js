@@ -3,6 +3,10 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      animation: {
+        fadeIn: 'fade-in 1s forwards',
+        fadeOut: 'fade-out 1s forwards'
+      },
       colors: {
         primary: {
           50: "#fff4ed",
