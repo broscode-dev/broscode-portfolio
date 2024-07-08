@@ -519,6 +519,9 @@ video {
 .h-dvh {
   height: 100dvh;
 }
+.h-36 {
+  height: 9rem;
+}
 .min-h-dvh {
   min-height: 100dvh;
 }
@@ -609,6 +612,10 @@ video {
 .border-primary-500 {
   --tw-border-opacity: 1;
   border-color: rgb(250 84 28 / var(--tw-border-opacity));
+}
+.border-primary-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 116 59 / var(--tw-border-opacity));
 }
 .bg-gray-900 {
   --tw-bg-opacity: 1;
