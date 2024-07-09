@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
     <!-- Wrapper -->
     <div class="min-h-dvh w-full flex flex-col px-20">
       <!-- First Section -->
-      <div class="h-dvh w-full flex flex-col gap-20 items-center">
+      <div class="h-dvh w-full flex flex-col gap-20 items-center" id="home">
         <!-- NavBar -->
         <nav
           class="w-full flex items-center py-5 justify-between text-sm font-semibold text-gray-900"
@@ -29,27 +29,27 @@
           <div class="flex items-center gap-5">
             <a
               class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#"
+              href="#home"
               >Home</a
             >
             <a
               class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#"
+              href="#about"
               >About Us</a
             >
             <a
               class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#"
+              href="#services"
               >Services</a
             >
             <a
               class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#"
+              href="#works"
               >Works</a
             >
             <a
               class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#"
+              href="#pricing"
               >Pricing</a
             >
           </div>
@@ -73,7 +73,11 @@
             <h1 class="text-5xl font-black leading-[4rem] text-gray-900">
               Brothers who code <br />
               your dream
-              <span id="service" class="uppercase text-primary-500 transition-opacity">website!</span>
+              <span
+                id="service"
+                class="uppercase text-primary-500 transition-opacity"
+                >website!</span
+              >
             </h1>
             <!-- intro -->
             <p class="text-gray-800">
@@ -101,7 +105,7 @@
         </div>
       </div>
       <!-- About Us -->
-      <div class="flex gap-20">
+      <div class="flex gap-20" id="about">
         <!-- about us text -->
         <div class="flex flex-1 flex-col gap-5 text-right">
           <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
@@ -188,9 +192,11 @@
         </div>
       </div>
       <!-- Our Services -->
-      <div class="flex flex-col gap-5 mt-20 h-dvh">
+      <div class="flex flex-col gap-5 mt-20 h-dvh" id="services">
         <!-- Services Text -->
-        <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">Our Services</h6>
+        <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
+          Our Services
+        </h6>
         <h1 class="text-5xl font-extrabold text-gray-900">We Provide</h1>
         <p class="text-gray-500">
           At Broscode, we offer a comprehensive range of web development
@@ -220,8 +226,14 @@
           <div
             class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-1/4 items-center"
           >
-            <img class="w-36 h-36" src="./assets/server.svg" alt="website-image" />
-            <h5 class="text-gray-900 font-semibold">Web Applications Development</h5>
+            <img
+              class="w-36 h-36"
+              src="./assets/server.svg"
+              alt="website-image"
+            />
+            <h5 class="text-gray-900 font-semibold">
+              Web Applications Development
+            </h5>
             <p class="text-gray-500 text-sm">
               We build custom web applications from scratch using pure code.
               Unlike off-the-shelf solutions, our full stack applications are
@@ -233,9 +245,13 @@
           </div>
           <!-- website redesign card -->
           <div
-            class="flex flex-col bg-white p-5 gap-5  rounded-2xl shadow-cssScan w-1/4 items-center"
+            class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-1/4 items-center"
           >
-            <img class="w-36 h-36" src="./assets/redesign.svg" alt="website-image" />
+            <img
+              class="w-36 h-36"
+              src="./assets/redesign.svg"
+              alt="website-image"
+            />
             <h5 class="text-gray-900 font-semibold">Website Redesign</h5>
             <p class="text-gray-500 text-sm">
               We revitalize your website for a fresh, modern appeal. Our browser
@@ -265,42 +281,167 @@
         </div>
       </div>
       <!-- Our Works -->
-      <div class="flex flex-col gap-3 mt-20">
-        <h6>Our Works</h6>
+      <div class="flex flex-col gap-5 mt-20" id="works">
+        <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
+          Our Works
+        </h6>
+        <h1 class="text-5xl font-extrabold text-gray-900">Work Showcase</h1>
         <!-- Alanis Beauty Parlour -->
-        <div class="flex bg-white p-3 gap-3 w-1/2 rounded-lg">
+        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
           <img
-            class="rounded-md w-2/3 h-56 object-cover"
-            src="./assets/works/alanis.png"
+            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+            src="./assets/works/home.png"
             alt="alanis-landing-page"
+            id="alanis"
           />
-          <div class="flex flex-col justify-between gap-2">
-            <div class="flex flex-col gap-2">
-              <h5 class="text-primary-500 font-semibold uppercase">
+          <div class="flex flex-col flex-1 justify-between gap-2">
+            <div class="flex flex-col gap-3">
+              <h5 class="text-gray-900 font-extrabold uppercase">
                 Alanis Beauty Parlour
               </h5>
-              <p class="text-xs text-slate-500">www.alanisbeautyparlour.com</p>
-              <p class="text-slate-600 text-sm">
+              <p class="text-gray-500 text-sm">
                 We elevated a beauty parlour's outdated design to international
                 standards of elegance and functionality. Our modern redesign
                 enhances customer experience, aligns with global trends, and
                 elevates brand presence.
               </p>
+              <q class="text-gray-900 text-sm italic font-semibold"
+                >Thank You BrosCode for the fantastic website revamp! The new
+                design perfectly captures our brand's essence and has
+                significantly improved our online presence. We've received
+                numerous compliments from our clients. Great job! -
+                Proprietor</q
+              >
             </div>
-            <div class="flex justify-end">
+            <div class="flex justify-center">
               <a
                 href="https://alanisbeautyparlour.com/home"
-                class="underline cursor-pointer hover:text-primary-500"
+                class="cursor-pointer"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Visit</a
+                ><button
+                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+                >
+                  Visit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Wallit -->
+        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
+          <img
+            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+            src="./assets/works/wallit1.png"
+            alt="alanis-landing-page"
+            id="wallit"
+          />
+          <div class="flex flex-col flex-1 justify-between gap-2">
+            <div class="flex flex-col gap-3">
+              <h5 class="text-gray-900 font-extrabold uppercase">Wallit</h5>
+              <p class="text-gray-500 text-sm">
+                We designed a landing page for a finance management tool named
+                "Wallit". The site highlights the app's benefits, user
+                testimonials and available subscription plans.
+              </p>
+              <q class="text-gray-900 text-sm italic font-semibold"
+                >Impressive UI/UX! The Wallit page is clean, intuitive, and
+                visually engaging, demonstrating excellent attention to detail -
+                UI/UX Designer</q
+              >
+            </div>
+            <div class="flex justify-center">
+              <a
+                href="https://jentjames.github.io/landing-pages/wallit/"
+                class="cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button
+                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+                >
+                  Visit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Firewatch -->
+        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
+          <img
+            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+            src="./assets/works/firewatch1.png"
+            alt="alanis-landing-page"
+            id="firewatch"
+          />
+          <div class="flex flex-col flex-1 justify-between gap-2">
+            <div class="flex flex-col gap-3">
+              <h5 class="text-gray-900 font-extrabold uppercase">Firewatch</h5>
+              <p class="text-gray-500 text-sm">
+                We developed a web application named "Firewatch" for XL plus
+                screens showcasing popular and trending movies, TV series, and
+                celebrities.
+              </p>
+              <q class="text-gray-900 text-sm italic font-semibold"
+                >Firewatch has transformed how I discover trending content. The
+                home page is user-friendly, visually appealing, and packed with
+                useful features. It's my go-to app now!</q
+              >
+            </div>
+            <div class="flex justify-center">
+              <a
+                href="https://firewatch-f3d20.web.app/home"
+                class="cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button
+                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+                >
+                  Visit
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- RPS -->
+        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
+          <img
+            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+            src="./assets/works/rps1.png"
+            alt="alanis-landing-page"
+            id="rps"
+          />
+          <div class="flex flex-col flex-1 justify-between gap-2">
+            <div class="flex flex-col gap-3">
+              <h5 class="text-gray-900 font-extrabold uppercase">
+                Rock Paper Scissors
+              </h5>
+              <p class="text-gray-500 text-sm">
+                We designed and implemented a web-based "Rock Paper Scissors"
+                game specifically as a mini project tailored for a high school
+                student's educational experience.
+              </p>
+              <q class="text-gray-900 text-sm italic font-semibold"
+                >I thoroughly enjoyed playing the web-based 'Rock Paper Scissors' game developed by BrosCode for my school project. It was both entertaining and educational, helping me grasp fundamental concepts in web development.</q
+              >
+            </div>
+            <div class="flex justify-center">
+              <a
+                href="https://jhonsfranky17.github.io/Rock-Paper-Scissors/"
+                class="cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button
+                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+                >
+                  Visit
+                </button></a
               >
             </div>
           </div>
         </div>
       </div>
       <!-- Pricing -->
-      <div class="flex w-full justify-center gap-5">
+      <div class="flex w-full justify-center gap-5 mt-20" id="pricing">
         <!-- Basic Pricing -->
         <div class="flex flex-col gap-5 w-1/4 p-3 bg-white rounded-lg">
           <!-- header -->
@@ -356,5 +497,6 @@
       </div>
     </div>
     <script src="./scripts/hero.js"></script>
+    <script src="./scripts/works.js"></script>
   </body>
 </html>
