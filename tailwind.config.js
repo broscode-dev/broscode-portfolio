@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      boxShadow:{
+        cssScan: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
+},
       animation: {
         fadeIn: 'fade-in 1s forwards',
         fadeOut: 'fade-out 1s forwards'
