@@ -18,7 +18,7 @@
     <!-- Wrapper -->
     <div class="min-h-dvh w-full flex flex-col px-20">
       <!-- First Section -->
-      <div class="h-dvh w-full flex flex-col gap-20 items-center" id="home">
+      <div class="h-dvh w-full flex flex-col gap-24 items-center" id="home">
         <!-- NavBar -->
         <nav
           class="w-full flex items-center py-5 justify-between text-sm font-semibold text-gray-900"
@@ -26,7 +26,7 @@
           <!-- logo -->
           <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
           <!-- navs -->
-          <div class="flex items-center gap-5">
+          <div class="flex items-center gap-7">
             <a
               class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
               href="#home"
@@ -66,43 +66,59 @@
           </div>
         </nav>
         <!-- Hero Section -->
-        <div class="flex gap-5">
-          <!-- left section -->
-          <div class="flex flex-col gap-5 flex-1">
-            <!-- tagline -->
-            <h1 class="text-5xl font-black leading-[4rem] text-gray-900">
-              Brothers who code <br />
-              your dream
-              <span
-                id="service"
-                class="uppercase text-primary-500 transition-opacity"
-                >website!</span
+        <div class="flex flex-col gap-5 w-full">
+          <!-- tagline -->
+          <h1
+            class="text-8xl font-black leading-[6rem] text-gray-900 text-center"
+          >
+            Brothers who code <br />
+            your dream
+            <span
+              id="service"
+              class="uppercase text-primary-500 transition-opacity"
+              >website!</span
+            >
+          </h1>
+          <!-- intro -->
+          <p class="text-gray-800 text-center">
+            Let's build your online presence together with BrosCode, using the
+            latest web technologies for your business needs.
+          </p>
+          <!-- CTA -->
+          <div class="flex items-center gap-2 justify-center">
+            <button
+              class="px-5 py-3 text-xs font-semibold text-white bg-gray-900 hover:bg-gray-950 rounded-full"
+            >
+              Get a Free Quote
+            </button>
+            <a href="#works"
+              ><button
+                class="px-5 py-3 text-xs font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
               >
-            </h1>
-            <!-- intro -->
-            <p class="text-gray-800">
-              Let's build your online presence together with BrosCode, using the
-              latest web technologies for your business needs.
-            </p>
-            <!-- CTA -->
-            <div class="flex items-center gap-2">
-              <button
-                class="px-5 py-3 text-xs font-semibold text-white bg-gray-900 hover:bg-gray-950 rounded-full"
-              >
-                Get a Free Quote
-              </button>
-              <a href="#works"
-                ><button
-                  class="px-5 py-3 text-xs font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
-                >
-                  See Our Works
-                </button></a
-              >
-            </div>
+                See Our Works
+              </button></a
+            >
           </div>
-          <!-- right section -->
-          <div class="flex-1">
-            <img src="./assets/hero.svg" alt="Hero Image" />
+        </div>
+        <!-- We + You -->
+        <div class="flex w-full gap-32">
+          <!-- We -->
+          <div class="flex gap-5 flex-1">
+            <h1 class="text-5xl font-semibold">We</h1>
+            <div class="w-[2px] h-full bg-primary-500"></div>
+            <h3 class="text-gray-800">
+              plan, design, build, develop, ship, and deploy websites for
+              businesses and individuals.
+            </h3>
+          </div>
+          <!-- You -->
+          <div class="flex gap-5 flex-1">
+            <h1 class="text-5xl font-semibold">You</h1>
+            <div class="w-[2px] h-full bg-primary-500"></div>
+            <h3 class="text-gray-800">
+              get a higher conversion rate on your traffic - meaning more sales,
+              leads, and signups.
+            </h3>
           </div>
         </div>
       </div>
