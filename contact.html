@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrosCode | Contact</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav
+      class="w-full flex items-center justify-between text-sm font-semibold text-gray-900 bg-white p-5 fixed top-0"
+    >
+      <!-- logo -->
+      <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
+      <!-- navs -->
+      <div class="flex items-center gap-7">
+        <a
+          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+          href="./index.html"
+          >Home</a
+        >
+        <a
+          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+          href="./index.html#about"
+          >About Us</a
+        >
+        <a
+          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+          href="./index.html#services"
+          >Services</a
+        >
+        <a
+          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+          href="./index.html#works"
+          >Works</a
+        >
+        <a
+          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+          href="./index.html#pricing"
+          >Pricing</a
+        >
+      </div>
+
+      <!-- social-links -->
+      <div class="flex items-center gap-5">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </nav>
+    <!-- wrapper -->
+    <div class="w-dvh h-dvh flex gap-5">
+      <!-- left section -->
+      <div
+        class="flex-1 flex flex-col gap-5 justify-center bg-gradient-to-br from-primary-200 to-primary-600 p-10"
+      >
+        <h1 class="text-7xl font-bold text-primary-50">Contact Us</h1>
+        <p class="text-lg font-semibold text-primary-50">
+          Email, call or fill the form to learn how BrosCode can solve your
+          business problem!
+        </p>
+        <div class="flex flex-col gap-2">
+          <p
+            class="text-primary-50 font-semibold text-lg underline underline-offset-2"
+          >
+            broscode2024@gmail.com
+          </p>
+          <p
+            class="text-primary-50 font-semibold text-lg underline underline-offset-2"
+          >
+            +91 8590492117
+          </p>
+        </div>
+      </div>
+      <!-- right section -->
+      <div class="flex-1 flex flex-col gap-2 justify-center items-center">
+        <form class="flex flex-col gap-3 border p-7 rounded-lg">
+          <div class="flex flex-col gap-2">
+            <h1 class="text-slate-900 text-4xl font-bold">Get in touch</h1>
+            <p class="text-slate-900">You can reach us anytime</p>
+          </div>
+          <div class="flex gap-2">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Firstname"
+              class="p-3 bg-slate-50 rounded-lg w-full border"
+              required
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Lastname"
+              class="p-3 bg-slate-50 rounded-lg w-full border"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="p-3 bg-slate-50 rounded-lg w-full border"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+            class="p-3 bg-slate-50 rounded-lg w-full border"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            class="p-3 bg-slate-50 rounded-lg w-full border"
+            placeholder="Message"
+            required
+            rows="10"
+          ></textarea>
+          <button
+            class="px-4 py-2 text-white bg-primary-500 rounded-full hover:bg-primary-600"
+            href="./contact.html"
+            type="submit"
+          >
+            Contact Us
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
