@@ -13,6 +13,33 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s forwards;
+      }
+
+      .fade-out {
+        animation: fadeOut 1s forwards;
+      }
+    </style>
   </head>
   <body>
     <!-- Wrapper -->
@@ -82,8 +109,7 @@
               <span
                 id="service"
                 class="uppercase text-primary-500 transition-opacity"
-                >website!</span
-              >
+              ></span>
             </h1>
             <!-- intro -->
             <p class="text-gray-800 text-left sm:text-center">
@@ -256,204 +282,201 @@
             </svg>
           </div>
         </div>
-        <!-- Padding wrapper for global padding of content -->
-        <div class="px-10 sm:px-20 flex flex-col gap-20">
-          <!-- About Us -->
-          <div class="flex flex-col lg:flex-row gap-20" id="about">
-            <!-- about us text -->
-            <div class="flex flex-1 flex-col gap-5 text-left lg:text-right">
-              <h6
-                class="uppercase tracking-wider font-bold text-xs text-gray-500"
-              >
-                About Us
-              </h6>
-              <h1 class="text-5xl font-extrabold text-gray-900">Who We Are</h1>
-              <p class="text-gray-500">
-                Founded with a passion for coding excellence, we specialize in
-                crafting bespoke digital solutions that empower businesses to
-                thrive online. With a deep commitment to quality and
-                cutting-edge technologies, , we transform your ideas into
-                impactful realities. Whether you're a startup or an established
-                enterprise, trust BrosCode to elevate your digital presence with
-                tailored, scalable solutions that deliver results. Join us on
-                this exciting journey of innovation and growth.
+
+        <!-- About Us -->
+        <div class="px-10 sm:px-20 flex flex-col lg:flex-row gap-20" id="about">
+          <!-- about us text -->
+          <div class="flex flex-1 flex-col gap-5 text-left lg:text-right">
+            <h6
+              class="uppercase tracking-wider font-bold text-xs text-gray-500"
+            >
+              About Us
+            </h6>
+            <h1 class="text-5xl font-extrabold text-gray-900">Who We Are</h1>
+            <p class="text-gray-500">
+              Founded with a passion for coding excellence, we specialize in
+              crafting bespoke digital solutions that empower businesses to
+              thrive online. With a deep commitment to quality and cutting-edge
+              technologies, , we transform your ideas into impactful realities.
+              Whether you're a startup or an established enterprise, trust
+              BrosCode to elevate your digital presence with tailored, scalable
+              solutions that deliver results. Join us on this exciting journey
+              of innovation and growth.
+            </p>
+          </div>
+          <!-- Metrics -->
+          <div class="flex flex-1 flex-col gap-10">
+            <!-- Projects -->
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-20">
+              <!-- Total -->
+              <div class="flex flex-col gap-3 flex-[0.2]">
+                <h3 class="text-5xl font-extrabold text-gray-900">
+                  10<sup class="text-primary-500">+</sup>
+                </h3>
+                <p
+                  class="uppercase tracking-wider font-bold text-xs text-gray-500"
+                >
+                  Projects
+                </p>
+              </div>
+              <!-- Text -->
+              <div class="text-sm text-gray-500 flex-1">
+                Our success is built on the trust and satisfaction of over 10
+                clients across various industries. Our commitment to delivering
+                exceptional web solutions and personalized service has helped
+                businesses achieve their digital goals.
+              </div>
+            </div>
+            <!-- Clients -->
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-20">
+              <!-- Total -->
+              <div class="flex flex-col gap-3 flex-[0.2]">
+                <h3 class="text-5xl font-extrabold text-gray-900">
+                  07<sup class="text-primary-500">+</sup>
+                </h3>
+                <p
+                  class="uppercase tracking-wider font-bold text-xs text-gray-500"
+                >
+                  Happy Clients
+                </p>
+              </div>
+              <!-- Text -->
+              <div class="text-sm text-gray-500 flex-1">
+                Our success is reflected in the smiles of over 7 happy clients.
+                Our dedication to delivering top-notch web solutions and
+                exceptional customer service has earned us the trust and
+                satisfaction of businesses across various industries.
+              </div>
+            </div>
+            <!-- Experience -->
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-20">
+              <!-- Total -->
+              <div class="flex flex-col gap-3 flex-[0.2]">
+                <h3 class="text-5xl font-extrabold text-gray-900">
+                  03<sup class="text-primary-500">+</sup>
+                </h3>
+                <p
+                  class="uppercase tracking-wider font-bold text-xs text-gray-500"
+                >
+                  Years of Experience
+                </p>
+              </div>
+              <!-- Text -->
+              <div class="text-sm text-gray-500 flex-1">
+                With over 3 years of experience in the web development industry,
+                BrosCode has a proven track record of delivering high-quality,
+                innovative solutions. Our expertise spans various technologies
+                and industries, allowing us to tailor our services to meet your
+                unique needs.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Our Services -->
+        <div class="px-10 sm:px-20 flex flex-col gap-5" id="services">
+          <!-- Services Text -->
+          <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
+            Our Services
+          </h6>
+          <h1 class="text-5xl font-extrabold text-gray-900">We Provide</h1>
+          <p class="text-gray-500">
+            At Broscode, we offer a comprehensive range of web development
+            services to meet your business needs. From custom website design and
+            development to full-stack solutions our team is equipped to handle
+            projects of any scale. We also specialize in e-commerce solutions,
+            revamping outdated websites and graphics designing to help your
+            business succeed online.
+          </p>
+          <!-- Service Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+            <!-- website card -->
+            <div
+              class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full items-center"
+            >
+              <img
+                class="w-36 h-36"
+                src="./assets/web.svg"
+                alt="website-image"
+              />
+              <h5 class="text-gray-900 font-semibold">Website Development</h5>
+              <p class="text-gray-500 text-sm">
+                We create custom websites from scratch using pure code. Unlike
+                Shopify, WordPress, or Wix, our HTML, CSS, and JavaScript
+                solutions are unique, optimized, and tailored to your needs.
+                Enjoy greater flexibility, better SEO, and enhanced user
+                experience with our high-performance, scalable, and secure
+                websites.
               </p>
             </div>
-            <!-- Metrics -->
-            <div class="flex flex-1 flex-col gap-3">
-              <!-- Projects -->
-              <div class="flex flex-col lg:flex-row gap-5 sm:gap-20">
-                <!-- Total -->
-                <div class="flex flex-col gap-3 flex-[0.2]">
-                  <h3 class="text-5xl font-extrabold text-gray-900">
-                    10<sup class="text-primary-500">+</sup>
-                  </h3>
-                  <p
-                    class="uppercase tracking-wider font-bold text-xs text-gray-500"
-                  >
-                    Projects
-                  </p>
-                </div>
-                <!-- Text -->
-                <div class="text-sm text-gray-500 flex-1">
-                  Our success is built on the trust and satisfaction of over 10
-                  clients across various industries. Our commitment to
-                  delivering exceptional web solutions and personalized service
-                  has helped businesses achieve their digital goals.
-                </div>
-              </div>
-              <!-- Clients -->
-              <div class="flex flex-col lg:flex-row gap-5 sm:gap-20">
-                <!-- Total -->
-                <div class="flex flex-col gap-3 flex-[0.2]">
-                  <h3 class="text-5xl font-extrabold text-gray-900">
-                    7<sup class="text-primary-500">+</sup>
-                  </h3>
-                  <p
-                    class="uppercase tracking-wider font-bold text-xs text-gray-500"
-                  >
-                    Happy Clients
-                  </p>
-                </div>
-                <!-- Text -->
-                <div class="text-sm text-gray-500 flex-1">
-                  Our success is reflected in the smiles of over 7 happy
-                  clients. Our dedication to delivering top-notch web solutions
-                  and exceptional customer service has earned us the trust and
-                  satisfaction of businesses across various industries.
-                </div>
-              </div>
-              <!-- Experience -->
-              <div class="flex flex-col lg:flex-row gap-5 sm:gap-20">
-                <!-- Total -->
-                <div class="flex flex-col gap-3 flex-[0.2]">
-                  <h3 class="text-5xl font-extrabold text-gray-900">
-                    3<sup class="text-primary-500">+</sup>
-                  </h3>
-                  <p
-                    class="uppercase tracking-wider font-bold text-xs text-gray-500"
-                  >
-                    Years of Experience
-                  </p>
-                </div>
-                <!-- Text -->
-                <div class="text-sm text-gray-500 flex-1">
-                  With over 3 years of experience in the web development
-                  industry, BrosCode has a proven track record of delivering
-                  high-quality, innovative solutions. Our expertise spans
-                  various technologies and industries, allowing us to tailor our
-                  services to meet your unique needs.
-                </div>
-              </div>
+            <!-- web apps card -->
+            <div
+              class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full items-center"
+            >
+              <img
+                class="w-36 h-36"
+                src="./assets/server.svg"
+                alt="website-image"
+              />
+              <h5 class="text-gray-900 font-semibold">
+                Web Applications Development
+              </h5>
+              <p class="text-gray-500 text-sm">
+                We build custom web applications from scratch using pure code.
+                Unlike off-the-shelf solutions, our full stack applications are
+                tailored to your needs, offering unmatched performance,
+                security, and scalability. Experience greater flexibility,
+                better integration, and enhanced functionality with our bespoke
+                web applications.
+              </p>
+            </div>
+            <!-- website redesign card -->
+            <div
+              class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full items-center"
+            >
+              <img
+                class="w-36 h-36"
+                src="./assets/redesign.svg"
+                alt="website-image"
+              />
+              <h5 class="text-gray-900 font-semibold">Website Redesign</h5>
+              <p class="text-gray-500 text-sm">
+                We revitalize your website for a fresh, modern appeal. Our
+                browser native solutions outperform template-based options,
+                ensuring top-notch performance, security, and SEO. Experience a
+                distinctive, tailored user experience that elevates your brand
+                and captivates your audience.
+              </p>
+            </div>
+            <!-- website redesign card -->
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-cssScan p-5 gap-5 w-full items-center"
+            >
+              <img
+                class="w-36 h-36"
+                src="./assets/graphics.svg"
+                alt="graphics-image"
+              />
+              <h5 class="text-gray-900 font-semibold">Graphics Design</h5>
+              <p class="text-gray-500 text-sm">
+                We offer expert graphic design services for creating custom
+                visiting cards, wedding invitations, and more. Our talented
+                designers specialize in crafting unique and visually striking
+                designs that reflect your personal or business style.
+              </p>
             </div>
           </div>
-          <!-- Our Services -->
-          <div class="flex flex-col gap-5" id="services">
-            <!-- Services Text -->
-            <h6
-              class="uppercase tracking-wider font-bold text-xs text-gray-500"
-            >
-              Our Services
-            </h6>
-            <h1 class="text-5xl font-extrabold text-gray-900">We Provide</h1>
-            <p class="text-gray-500">
-              At Broscode, we offer a comprehensive range of web development
-              services to meet your business needs. From custom website design
-              and development to full-stack solutions our team is equipped to
-              handle projects of any scale. We also specialize in e-commerce
-              solutions, revamping outdated websites and graphics designing to
-              help your business succeed online.
-            </p>
-            <!-- Service Cards -->
-            <div class="flex flex-col md:flex-row gap-5">
-              <!-- website card -->
-              <div
-                class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full md:w-1/4 items-center"
-              >
-                <img
-                  class="w-36 h-36"
-                  src="./assets/web.svg"
-                  alt="website-image"
-                />
-                <h5 class="text-gray-900 font-semibold">Website Development</h5>
-                <p class="text-gray-500 text-sm">
-                  We create custom websites from scratch using pure code. Unlike
-                  Shopify, WordPress, or Wix, our HTML, CSS, and JavaScript
-                  solutions are unique, optimized, and tailored to your needs.
-                  Enjoy greater flexibility, better SEO, and enhanced user
-                  experience with our high-performance, scalable, and secure
-                  websites.
-                </p>
-              </div>
-              <!-- web apps card -->
-              <div
-                class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full md:w-1/4 items-center"
-              >
-                <img
-                  class="w-36 h-36"
-                  src="./assets/server.svg"
-                  alt="website-image"
-                />
-                <h5 class="text-gray-900 font-semibold">
-                  Web Applications Development
-                </h5>
-                <p class="text-gray-500 text-sm">
-                  We build custom web applications from scratch using pure code.
-                  Unlike off-the-shelf solutions, our full stack applications
-                  are tailored to your needs, offering unmatched performance,
-                  security, and scalability. Experience greater flexibility,
-                  better integration, and enhanced functionality with our
-                  bespoke web applications.
-                </p>
-              </div>
-              <!-- website redesign card -->
-              <div
-                class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full md:w-1/4 items-center"
-              >
-                <img
-                  class="w-36 h-36"
-                  src="./assets/redesign.svg"
-                  alt="website-image"
-                />
-                <h5 class="text-gray-900 font-semibold">Website Redesign</h5>
-                <p class="text-gray-500 text-sm">
-                  We revitalize your website for a fresh, modern appeal. Our
-                  browser native solutions outperform template-based options,
-                  ensuring top-notch performance, security, and SEO. Experience
-                  a distinctive, tailored user experience that elevates your
-                  brand and captivates your audience.
-                </p>
-              </div>
-              <!-- website redesign card -->
-              <div
-                class="flex flex-col bg-white rounded-2xl shadow-cssScan p-5 gap-5 w-full md:w-1/4 items-center"
-              >
-                <img
-                  class="w-36 h-36"
-                  src="./assets/graphics.svg"
-                  alt="graphics-image"
-                />
-                <h5 class="text-gray-900 font-semibold">Graphics Design</h5>
-                <p class="text-gray-500 text-sm">
-                  We offer expert graphic design services for creating custom
-                  visiting cards, wedding invitations, and more. Our talented
-                  designers specialize in crafting unique and visually striking
-                  designs that reflect your personal or business style.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Our Works -->
-          <div class="flex flex-col gap-5" id="works">
-            <h6
-              class="uppercase tracking-wider font-bold text-xs text-gray-500"
-            >
-              Our Works
-            </h6>
-            <h1 class="text-5xl font-extrabold text-gray-900">Work Showcase</h1>
+        </div>
+        <!-- Our Works -->
+        <div class="px-10 sm:px-20 flex flex-col gap-5" id="works">
+          <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
+            Our Works
+          </h6>
+          <h1 class="text-5xl font-extrabold text-gray-900">Work Showcase</h1>
+          <!-- All Works -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <!-- Alanis Beauty Parlour -->
             <div
-              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -482,11 +505,11 @@
                 </div>
                 <a
                   href="https://alanisbeautyparlour.com/home"
-                  class="cursor-pointer"
+                  class="cursor-pointer sm:self-center"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><button
-                    class="px-20 py-5 sm:py-3 w-full text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+                    class="px-20 py-5 sm:py-3 w-full md:w-fit text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
                   >
                     Visit
                   </button></a
@@ -495,7 +518,7 @@
             </div>
             <!-- Wallit -->
             <div
-              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -519,11 +542,11 @@
                 </div>
                 <a
                   href="https://jentjames.github.io/landing-pages/wallit/"
-                  class="cursor-pointer"
+                  class="cursor-pointer sm:self-center"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><button
-                    class="px-20 py-5 sm:py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                    class="px-20 py-5 sm:py-3 w-full md:w-fit text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
                   >
                     Visit
                   </button></a
@@ -532,7 +555,7 @@
             </div>
             <!-- Firewatch -->
             <div
-              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -558,11 +581,11 @@
                 </div>
                 <a
                   href="https://firewatch-f3d20.web.app/home"
-                  class="cursor-pointer"
+                  class="cursor-pointer sm:self-center"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><button
-                    class="px-20 py-5 sm:py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                    class="px-20 py-5 sm:py-3 w-full md:w-fit text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
                   >
                     Visit
                   </button></a
@@ -571,7 +594,7 @@
             </div>
             <!-- RPS -->
             <div
-              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -598,11 +621,11 @@
                 </div>
                 <a
                   href="https://jhonsfranky17.github.io/Rock-Paper-Scissors/"
-                  class="cursor-pointer"
+                  class="cursor-pointer sm:self-center"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><button
-                    class="px-20 py-5 sm:py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                    class="px-20 py-5 sm:py-3 w-full md:w-fit text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
                   >
                     Visit
                   </button></a
@@ -610,275 +633,159 @@
               </div>
             </div>
           </div>
-          <!-- Team -->
-          <div
-            class="hidden w-full bg-custom-gradient rounded-2xl px-20 py-40 md:flex gap-10 bg-cover"
-          >
-            <div class="flex flex-1 flex-col gap-5 text-left">
-              <h6
-                class="uppercase tracking-wider font-bold text-xs text-gray-500"
-              >
-                Team
-              </h6>
-              <h1 class="text-5xl font-extrabold text-primary-500">
-                Who We Are
-              </h1>
-              <p class="text-slate-100">
-                Franklin and Jen, two visionary college classmates and coding
-                experts, joined forces to establish BrosCode, a premier web
-                development freelancing team. With their combined technical
-                prowess and innovative thinking, they create seamless,
-                responsive, and user-centric websites that elevate digital
-                experiences. BrosCode stands as a testament to their unwavering
-                commitment to excellence, quality, and the transformative power
-                of a compelling online presence.
-              </p>
-            </div>
-            <!-- Team Members -->
-            <div class="flex-1 flex gap-5">
-              <!-- Jen -->
-              <div class="flex flex-col gap-5">
-                <img
-                  src="./assets/jen.jpg"
-                  alt="Jen"
-                  class="w-96 rounded-xl h-[29rem]"
-                />
-                <div class="flex flex-col gap-1">
-                  <h3 class="text-slate-50 text-center font-semibold">
-                    Jen Thomas James
-                  </h3>
-                  <h6 class="text-center text-gray-500 text-sm font-medium">
-                    Full Stack Developer
-                  </h6>
-                </div>
-              </div>
-              <!-- Franklin -->
-              <div class="flex flex-col gap-5">
-                <img
-                  src="./assets/franklin-removebg-preview.png"
-                  alt="franklin"
-                  class="w-96 rounded-xl h-[29rem]"
-                />
-                <div class="flex flex-col gap-1">
-                  <h3 class="text-slate-50 text-center font-semibold">
-                    Franklin Jetty Johnson
-                  </h3>
-                  <h6 class="text-center text-gray-500 text-sm font-medium">
-                    Full Stack Developer
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Pricing -->
-          <div class="flex flex-col gap-5 px-0 md:px-20" id="pricing">
+        </div>
+        <!-- Team -->
+        <div
+          class="w-full bg-custom-gradient px-10 md:px-20 py-10 md:py-40 flex flex-col lg:flex-row gap-10 bg-cover"
+        >
+          <div class="flex flex-1 flex-col gap-5 text-left">
             <h6
               class="uppercase tracking-wider font-bold text-xs text-gray-500"
             >
-              Pricing
+              Team
             </h6>
-            <h1 class="text-5xl font-extrabold text-gray-900">
-              Check Our Pricing
-            </h1>
-            <div class="flex flex-col md:flex-row gap-5 mt-5">
-              <!-- Basic Pricing -->
-              <div
-                class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50 w-full"
-              >
-                <!-- header -->
-                <div class="flex justify-between">
-                  <!-- Cost + Pricing Name -->
-                  <div class="flex flex-col gap-3">
-                    <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
-                    <p class="text-gray-500 font-semibold">
-                      From
-                      <span class="font-bold text-slate-900 text-2xl"
-                        >₹14,999</span
-                      >
-                      onwards!
-                    </p>
-                  </div>
-                </div>
-                <!-- Ideal for -->
-                <p class="text-gray-500 text-sm">
-                  Ideal for static or informational websites, a cost-effective
-                  solution for presenting essential information online. It
-                  features fixed content, ensuring fast load times, reliability,
-                  and easy maintenance.
-                </p>
-                <!-- Features -->
-                <ul class="flex flex-col gap-3 text-gray-500 font-bold">
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />1-3 Pages
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    3 Point Responsive
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    Content Creation
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    High Quality Images
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    Hosting Support
-                  </li>
-                </ul>
-                <button
-                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
-                >
-                  Choose Package
-                </button>
+            <h1 class="text-5xl font-extrabold text-primary-500">Who We Are</h1>
+            <p class="text-slate-100">
+              Franklin and Jen, two visionary college classmates and coding
+              experts, joined forces to establish BrosCode, a premier web
+              development freelancing team. With their combined technical
+              prowess and innovative thinking, they create seamless, responsive,
+              and user-centric websites that elevate digital experiences.
+              BrosCode stands as a testament to their unwavering commitment to
+              excellence, quality, and the transformative power of a compelling
+              online presence.
+            </p>
+          </div>
+          <!-- Team Members -->
+          <div class="flex-1 flex flex-col lg:flex-row gap-5">
+            <!-- Jen -->
+            <div class="flex flex-col gap-5 w-full md:w-96">
+              <img src="./assets/jen.jpg" alt="Jen" class="rounded-xl" />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-slate-50 text-center font-semibold">
+                  Jen Thomas James
+                </h3>
+                <h6 class="text-center text-gray-500 text-sm font-medium">
+                  Full Stack Developer
+                </h6>
               </div>
-              <!-- Popular -->
-              <div
-                class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
-              >
-                <!-- header -->
-                <div class="flex justify-between">
-                  <!-- Cost + Pricing Name -->
-                  <div class="flex flex-col gap-3">
-                    <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
-                    <p class="text-gray-500 font-semibold">
-                      From
-                      <span class="font-bold text-slate-900 text-2xl"
-                        >₹14,999</span
-                      >
-                      onwards!
-                    </p>
-                  </div>
-                </div>
-                <!-- Ideal for -->
-                <p class="text-gray-500 text-sm">
-                  Ideal for static or informational websites, a cost-effective
-                  solution for presenting essential information online. It
-                  features fixed content, ensuring fast load times, reliability,
-                  and easy maintenance.
-                </p>
-                <!-- Features -->
-                <ul class="flex flex-col gap-3 text-gray-500 font-bold">
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />1-3 Pages
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    3 Point Responsive
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    Content Creation
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    High Quality Images
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    Hosting Support
-                  </li>
-                </ul>
-                <button
-                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
-                >
-                  Choose Package
-                </button>
+            </div>
+            <!-- Franklin -->
+            <div class="flex flex-col gap-5 w-full md:w-96">
+              <img
+                src="./assets/franklin-removebg-preview.png"
+                alt="franklin"
+                class="rounded-xl"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-slate-50 text-center font-semibold">
+                  Franklin Jetty Johnson
+                </h3>
+                <h6 class="text-center text-gray-500 text-sm font-medium">
+                  Full Stack Developer
+                </h6>
               </div>
-              <!-- Premium -->
-              <div
-                class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
-              >
-                <!-- header -->
-                <div class="flex justify-between">
-                  <!-- Cost + Pricing Name -->
-                  <div class="flex flex-col gap-3">
-                    <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
-                    <p class="text-gray-500 font-semibold">
-                      From
-                      <span class="font-bold text-slate-900 text-2xl"
-                        >₹14,999</span
-                      >
-                      onwards!
-                    </p>
-                  </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pricing -->
+        <div class="flex flex-col gap-5 px-10 sm:px-20" id="pricing">
+          <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
+            Pricing
+          </h6>
+          <h1 class="text-5xl font-extrabold text-gray-900">
+            Check Our Pricing
+          </h1>
+          <div class="flex flex-col md:flex-row gap-5 mt-5">
+            <!-- Basic Pricing -->
+            <div
+              class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50 w-full"
+            >
+              <!-- header -->
+              <div class="flex justify-between">
+                <!-- Cost + Pricing Name -->
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
+                  <p class="text-gray-500 font-semibold">
+                    From
+                    <span class="font-bold text-slate-900 text-2xl"
+                      >₹14,999</span
+                    >
+                    onwards!
+                  </p>
                 </div>
-                <!-- Ideal for -->
-                <p class="text-gray-500 text-sm">
-                  Ideal for static or informational websites, a cost-effective
-                  solution for presenting essential information online. It
-                  features fixed content, ensuring fast load times, reliability,
-                  and easy maintenance.
-                </p>
-                <!-- Features -->
-                <ul class="flex flex-col gap-3 text-gray-500 font-bold">
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />1-3 Pages
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    3 Point Responsive
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    Content Creation
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    High Quality Images
-                  </li>
-                  <li class="flex gap-5">
-                    <img
-                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                      alt="tick"
-                    />
-                    Hosting Support
-                  </li>
-                </ul>
+              </div>
+              <!-- Ideal for -->
+              <p class="text-gray-500 text-sm">
+                Small businesses or individuals looking for a simple online
+                presence.
+              </p>
+              <!-- Features -->
+              <ul class="flex flex-col gap-3 text-gray-500 font-bold">
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />Custom website design (up to 5 pages)
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  3 Point Responsive Design
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Content Creation
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  High Quality Images
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Basic Performance Optimization
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Contact Form
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Social Media Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  1 month of free support & maintenance
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Hosting Support
+                </li>
+              </ul>
+              <div class="flex-1 flex flex-col justify-end">
                 <button
                   class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
                 >
@@ -886,8 +793,261 @@
                 </button>
               </div>
             </div>
-            <div class="mt-20"></div>
+            <!-- Standard -->
+            <div
+              class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
+            >
+              <!-- header -->
+              <div class="flex justify-between">
+                <!-- Cost + Pricing Name -->
+                <div class="flex flex-col gap-3">
+                  <div class="flex gap-2 items-center justify-between">
+                    <h3 class="text-primary-500 font-bold text-xl">Standard</h3>
+                    <h1
+                      class="p-2 bg-primary-500 rounded-md text-primary-50 font-bold"
+                    >
+                      Popular
+                    </h1>
+                  </div>
+                  <p class="text-gray-500 font-semibold">
+                    From
+                    <span
+                      class="font-bold text-slate-500 text-xl line-through decoration-primary-500"
+                      >₹69,999</span
+                    >
+                    <span class="font-bold text-slate-900 text-2xl"
+                      >₹39,999</span
+                    >
+
+                    onwards!
+                  </p>
+                </div>
+              </div>
+              <!-- Ideal for -->
+              <p class="text-gray-500 text-sm">
+                Growing businesses needing more functionality and customization.
+              </p>
+              <!-- Features -->
+              <ul class="flex flex-col gap-3 text-gray-500 font-bold">
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />Custom website design (up to 10 pages)
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  4 Point Responsive Design
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Content Creation
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  High Quality Images
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Standard Performance Optimization
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  CMS Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Blog Setup
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Basic E-Commerce Functionality
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Social Media Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  3 months of free support & maintenance
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Hosting Support
+                </li>
+              </ul>
+              <div class="flex-1 flex flex-col justify-end">
+                <button
+                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
+                >
+                  Choose Package
+                </button>
+              </div>
+            </div>
+            <!-- Premium -->
+            <div
+              class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
+            >
+              <!-- header -->
+              <div class="flex justify-between">
+                <!-- Cost + Pricing Name -->
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-primary-500 font-bold text-xl">Premium</h3>
+                  <p class="text-gray-500 font-semibold">
+                    From
+                    <span class="font-bold text-slate-900 text-2xl"
+                      >₹99,999</span
+                    >
+                    onwards!
+                  </p>
+                </div>
+              </div>
+              <!-- Ideal for -->
+              <p class="text-gray-500 text-sm">
+                Established businesses needing advanced features and a
+                comprehensive online presence.
+                <!-- Features -->
+              </p>
+
+              <ul class="flex flex-col gap-3 text-gray-500 font-bold">
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />Custom website design (unlimited pages)
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Responsive & mobile first design
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Content Creation
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  High Quality Images
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Advanced Performance Optimization
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  CMS Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Full E-Commerce solution
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Custom Web Applications
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  API Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  AI Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Chatbot Integration
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  6 months of free support & maintenance
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Training sessions for client teams
+                </li>
+                <li class="flex gap-5">
+                  <img
+                    src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt="tick"
+                  />
+                  Hosting Support
+                </li>
+              </ul>
+              <div class="flex-1 flex flex-col justify-end">
+                <button
+                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
+                >
+                  Choose Package
+                </button>
+              </div>
+            </div>
           </div>
+          <div class="mt-20"></div>
         </div>
       </div>
     </div>
