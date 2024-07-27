@@ -16,715 +16,880 @@
   </head>
   <body>
     <!-- Wrapper -->
-    <div class="min-h-dvh w-full flex flex-col px-20">
-      <!-- First Section -->
-      <div class="h-dvh w-full flex flex-col gap-24 items-center" id="home">
-        <!-- NavBar -->
-        <nav
-          class="w-full flex items-center justify-between text-sm font-semibold text-gray-900 fixed top-0 z-10 bg-white p-5"
-        >
-          <!-- logo -->
-          <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
-          <!-- navs -->
-          <div class="flex items-center gap-7">
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#home"
-              >Home</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#about"
-              >About Us</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#services"
-              >Services</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#works"
-              >Works</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#pricing"
-              >Pricing</a
-            >
-          </div>
+    <div class="min-h-dvh w-full flex flex-col">
+      <!-- NavBar -->
+      <nav
+        class="hidden w-full md:flex items-center justify-between text-sm font-semibold text-gray-900 sticky top-0 left-0 z-10 bg-white px-20 py-5"
+      >
+        <!-- logo -->
+        <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
+        <!-- navs -->
+        <div class="flex items-center gap-7">
+          <a
+            class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+            href="#about"
+            >About Us</a
+          >
+          <a
+            class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+            href="#works"
+            >Works</a
+          >
+          <a
+            class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+            href="#pricing"
+            >Pricing</a
+          >
+        </div>
 
-          <!-- social-links -->
-          <div class="flex items-center gap-5">
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a
-              class="px-4 py-2 text-white bg-primary-500 rounded-full hover:bg-primary-600"
-              href="./contact.html"
-            >
-              Contact Us
-            </a>
-          </div>
-        </nav>
-        <!-- Hero Section -->
-        <div class="flex flex-col gap-5 w-full mt-44">
-          <!-- tagline -->
-          <h1
-            class="text-8xl font-black leading-[6rem] text-gray-900 text-center"
+        <!-- social-links -->
+        <div class="flex items-center gap-5">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a
+            class="px-4 py-2 text-white bg-primary-500 rounded-full hover:bg-primary-600"
+            href="./contact.html"
           >
-            Brothers who code <br />
-            your dream
-            <span
-              id="service"
-              class="uppercase text-primary-500 transition-opacity"
-              >website!</span
+            Contact Us
+          </a>
+        </div>
+      </nav>
+      <!-- Main Content -->
+      <div class="flex flex-col bg gap-20">
+        <!-- Hero + We + You + Wave -->
+        <div
+          class="min-h-screen w-full flex flex-col items-center gap-20"
+          id="home"
+        >
+          <!-- Hero Section -->
+          <div class="flex flex-col gap-5 w-full mt-32 sm:mt-44 px-10 sm:px-20">
+            <!-- tagline -->
+            <h1
+              class="text-5xl sm:text-7xl md:text-8xl font-black leading-[1.15] md:leading-[6rem] text-gray-900 text-left sm:text-center"
             >
-          </h1>
-          <!-- intro -->
-          <p class="text-gray-800 text-center">
-            Let's build your online presence together with BrosCode, using the
-            latest web technologies for your business needs.
-          </p>
-          <!-- CTA -->
-          <div class="flex items-center gap-2 justify-center">
-            <button
-              class="px-5 py-3 text-xs font-semibold text-white bg-gray-900 hover:bg-gray-950 rounded-full"
-            >
-              Get a Free Quote
-            </button>
-            <a href="#works"
-              ><button
-                class="px-5 py-3 text-xs font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+              Brothers who code <br />
+              your dream
+              <span
+                id="service"
+                class="uppercase text-primary-500 transition-opacity"
+                >website!</span
               >
-                See Our Works
-              </button></a
+            </h1>
+            <!-- intro -->
+            <p class="text-gray-800 text-left sm:text-center">
+              Let's build your online presence together with BrosCode, using the
+              latest web technologies for your business needs.
+            </p>
+            <!-- CTA -->
+            <div
+              class="flex flex-col sm:flex-row sm:items-center gap-2 sm:justify-center"
             >
+              <button
+                class="px-5 py-5 sm:py-3 text-sm font-semibold text-white bg-gray-900 hover:bg-gray-950 rounded-full w-full sm:w-fit"
+              >
+                Get a Free Quote
+              </button>
+              <a href="#works"
+                ><button
+                  class="px-5 py-5 sm:py-3 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                >
+                  See Our Works
+                </button></a
+              >
+            </div>
           </div>
-        </div>
-        <!-- We + You -->
-        <div class="flex w-full gap-32">
-          <!-- We -->
-          <div class="flex gap-5 flex-1">
-            <h1 class="text-5xl font-semibold">We</h1>
-            <div class="w-[2px] h-full bg-primary-500"></div>
-            <h3 class="text-gray-800">
-              plan, design, build, develop, ship, and deploy websites for
-              businesses and individuals.
-            </h3>
-          </div>
-          <!-- You -->
-          <div class="flex gap-5 flex-1">
-            <h1 class="text-5xl font-semibold">You</h1>
-            <div class="w-[2px] h-full bg-primary-500"></div>
-            <h3 class="text-gray-800">
-              get a higher conversion rate on your traffic - meaning more sales,
-              leads, and signups.
-            </h3>
-          </div>
-        </div>
-      </div>
-      <!-- About Us -->
-      <div class="flex gap-20" id="about">
-        <!-- about us text -->
-        <div class="flex flex-1 flex-col gap-5 text-right">
-          <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
-            About Us
-          </h6>
-          <h1 class="text-5xl font-extrabold text-gray-900">Who We Are</h1>
-          <p class="text-gray-500">
-            Founded with a passion for coding excellence, we specialize in
-            crafting bespoke digital solutions that empower businesses to thrive
-            online. With a deep commitment to quality and cutting-edge
-            technologies, , we transform your ideas into impactful realities.
-            Whether you're a startup or an established enterprise, trust
-            BrosCode to elevate your digital presence with tailored, scalable
-            solutions that deliver results. Join us on this exciting journey of
-            innovation and growth.
-          </p>
-        </div>
-        <!-- Metrics -->
-        <div class="flex flex-1 flex-col gap-3">
-          <!-- Projects -->
-          <div class="flex gap-20">
-            <!-- Total -->
-            <div class="flex flex-col gap-3 flex-[0.2]">
-              <h3 class="text-5xl font-extrabold text-gray-900">
-                10<sup class="text-primary-500">+</sup>
+          <!-- We + You -->
+          <div
+            class="flex flex-col md:flex-row w-full gap-10 sm:gap-32 px-10 sm:px-20"
+          >
+            <!-- We -->
+            <div class="flex gap-5 flex-1 w-full md:items-center">
+              <div class="flex gap-8">
+                <h1 class="text-5xl font-semibold">We</h1>
+                <div class="w-[2px] h-16 bg-primary-500"></div>
+              </div>
+              <h3 class="text-gray-800">
+                plan, design, build, develop, ship, and deploy websites for
+                businesses and individuals.
               </h3>
-              <p
+            </div>
+            <!-- You -->
+            <div class="flex gap-5 flex-1 w-full md:items-center">
+              <div class="flex gap-5">
+                <h1 class="text-5xl font-semibold">You</h1>
+                <div class="w-[2px] h-16 bg-primary-500"></div>
+              </div>
+              <h3 class="text-gray-800">
+                get a higher conversion rate on your traffic - meaning more
+                sales, leads, and signups.
+              </h3>
+            </div>
+          </div>
+          <!-- wave -->
+          <div class="h-0 md:h-1/6 w-0 md:w-full hidden md:block">
+            <svg
+              width="100%"
+              height="100%"
+              id="svg"
+              viewBox="0 0 1440 490"
+              xmlns="http://www.w3.org/2000/svg"
+              class="transition duration-300 ease-in-out delay-150"
+            >
+              <style>
+                .path-0 {
+                  animation: pathAnim-0 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-0 {
+                  0% {
+                    d: path(
+                      "M 0,600 L 0,150 C 124.84210526315792,140.01913875598086 249.68421052631584,130.03827751196172 329,123 C 408.31578947368416,115.96172248803828 442.1052631578947,111.866028708134 530,134 C 617.8947368421053,156.133971291866 759.8947368421052,204.49760765550235 880,224 C 1000.1052631578948,243.50239234449765 1098.3157894736844,234.14354066985646 1188,217 C 1277.6842105263156,199.85645933014354 1358.842105263158,174.92822966507177 1440,150 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  25% {
+                    d: path(
+                      "M 0,600 L 0,150 C 64.47846889952157,173.78947368421052 128.95693779904315,197.57894736842104 241,208 C 353.04306220095685,218.42105263157896 512.6507177033492,215.47368421052636 623,194 C 733.3492822966508,172.52631578947364 794.4401913875597,132.52631578947367 876,129 C 957.5598086124403,125.47368421052633 1059.5885167464116,158.42105263157896 1157,168 C 1254.4114832535884,177.57894736842104 1347.2057416267942,163.78947368421052 1440,150 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  50% {
+                    d: path(
+                      "M 0,600 L 0,150 C 119.56937799043061,118.69856459330143 239.13875598086122,87.39712918660287 333,94 C 426.8612440191388,100.60287081339713 495.0143540669858,145.11004784688996 567,141 C 638.9856459330142,136.88995215311004 714.8038277511961,84.16267942583731 817,94 C 919.1961722488039,103.83732057416269 1047.7703349282297,176.23923444976077 1156,196 C 1264.2296650717703,215.76076555023923 1352.1148325358852,182.8803827751196 1440,150 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  75% {
+                    d: path(
+                      "M 0,600 L 0,150 C 66.36363636363635,150.0287081339713 132.7272727272727,150.05741626794256 240,170 C 347.2727272727273,189.94258373205744 495.4545454545455,229.79904306220095 610,203 C 724.5454545454545,176.20095693779905 805.4545454545455,82.74641148325361 890,84 C 974.5454545454545,85.25358851674639 1062.7272727272727,181.21531100478467 1155,208 C 1247.2727272727273,234.78468899521533 1343.6363636363635,192.39234449760767 1440,150 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  100% {
+                    d: path(
+                      "M 0,600 L 0,150 C 124.84210526315792,140.01913875598086 249.68421052631584,130.03827751196172 329,123 C 408.31578947368416,115.96172248803828 442.1052631578947,111.866028708134 530,134 C 617.8947368421053,156.133971291866 759.8947368421052,204.49760765550235 880,224 C 1000.1052631578948,243.50239234449765 1098.3157894736844,234.14354066985646 1188,217 C 1277.6842105263156,199.85645933014354 1358.842105263158,174.92822966507177 1440,150 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                }
+              </style>
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                >
+                  <stop offset="5%" stop-color="#f6d365"></stop>
+                  <stop offset="95%" stop-color="#fda085"></stop>
+                </linearGradient>
+              </defs>
+              <path
+                d="M 0,600 L 0,150 C 124.84210526315792,140.01913875598086 249.68421052631584,130.03827751196172 329,123 C 408.31578947368416,115.96172248803828 442.1052631578947,111.866028708134 530,134 C 617.8947368421053,156.133971291866 759.8947368421052,204.49760765550235 880,224 C 1000.1052631578948,243.50239234449765 1098.3157894736844,234.14354066985646 1188,217 C 1277.6842105263156,199.85645933014354 1358.842105263158,174.92822966507177 1440,150 L 1440,600 L 0,600 Z"
+                stroke="none"
+                stroke-width="0"
+                fill="url(#gradient)"
+                fill-opacity="0.53"
+                class="transition-all duration-300 ease-in-out delay-150 path-0"
+              ></path>
+              <style>
+                .path-1 {
+                  animation: pathAnim-1 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-1 {
+                  0% {
+                    d: path(
+                      "M 0,600 L 0,350 C 67.92344497607655,328.066985645933 135.8468899521531,306.13397129186603 247,316 C 358.1531100478469,325.86602870813397 512.535885167464,367.53110047846894 604,364 C 695.464114832536,360.46889952153106 724.0095693779906,311.74162679425837 814,321 C 903.9904306220094,330.25837320574163 1055.4258373205741,397.5023923444976 1170,412 C 1284.5741626794259,426.4976076555024 1362.287081339713,388.2488038277512 1440,350 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  25% {
+                    d: path(
+                      "M 0,600 L 0,350 C 80.2870813397129,332.9473684210526 160.5741626794258,315.89473684210526 253,331 C 345.4258373205742,346.10526315789474 449.9904306220095,393.36842105263156 550,376 C 650.0095693779905,358.63157894736844 745.4641148325358,276.63157894736844 854,275 C 962.5358851674642,273.36842105263156 1084.153110047847,352.1052631578947 1184,378 C 1283.846889952153,403.8947368421053 1361.9234449760766,376.94736842105266 1440,350 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  50% {
+                    d: path(
+                      "M 0,600 L 0,350 C 73.6267942583732,331.12918660287085 147.2535885167464,312.25837320574163 253,336 C 358.7464114832536,359.74162679425837 496.6124401913876,426.09569377990425 610,420 C 723.3875598086124,413.90430622009575 812.2966507177034,335.3588516746412 897,324 C 981.7033492822966,312.6411483253588 1062.200956937799,368.46889952153106 1152,384 C 1241.799043062201,399.53110047846894 1340.8995215311006,374.76555023923447 1440,350 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  75% {
+                    d: path(
+                      "M 0,600 L 0,350 C 116.60287081339715,344.75598086124404 233.2057416267943,339.5119617224881 326,355 C 418.7942583732057,370.4880382775119 487.77990430622015,406.70813397129183 585,389 C 682.2200956937799,371.29186602870817 807.6746411483253,299.65550239234454 906,305 C 1004.3253588516747,310.34449760765546 1075.5215311004783,392.6698564593301 1160,413 C 1244.4784688995217,433.3301435406699 1342.2392344497607,391.665071770335 1440,350 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                  100% {
+                    d: path(
+                      "M 0,600 L 0,350 C 67.92344497607655,328.066985645933 135.8468899521531,306.13397129186603 247,316 C 358.1531100478469,325.86602870813397 512.535885167464,367.53110047846894 604,364 C 695.464114832536,360.46889952153106 724.0095693779906,311.74162679425837 814,321 C 903.9904306220094,330.25837320574163 1055.4258373205741,397.5023923444976 1170,412 C 1284.5741626794259,426.4976076555024 1362.287081339713,388.2488038277512 1440,350 L 1440,600 L 0,600 Z"
+                    );
+                  }
+                }
+              </style>
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="50%"
+                  x2="100%"
+                  y2="50%"
+                >
+                  <stop offset="5%" stop-color="#f6d365"></stop>
+                  <stop offset="95%" stop-color="#fda085"></stop>
+                </linearGradient>
+              </defs>
+              <path
+                d="M 0,600 L 0,350 C 67.92344497607655,328.066985645933 135.8468899521531,306.13397129186603 247,316 C 358.1531100478469,325.86602870813397 512.535885167464,367.53110047846894 604,364 C 695.464114832536,360.46889952153106 724.0095693779906,311.74162679425837 814,321 C 903.9904306220094,330.25837320574163 1055.4258373205741,397.5023923444976 1170,412 C 1284.5741626794259,426.4976076555024 1362.287081339713,388.2488038277512 1440,350 L 1440,600 L 0,600 Z"
+                stroke="none"
+                stroke-width="0"
+                fill="url(#gradient)"
+                fill-opacity="1"
+                class="transition-all duration-300 ease-in-out delay-150 path-1"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- Padding wrapper for global padding of content -->
+        <div class="px-10 sm:px-20 flex flex-col gap-20">
+          <!-- About Us -->
+          <div class="flex flex-col lg:flex-row gap-20" id="about">
+            <!-- about us text -->
+            <div class="flex flex-1 flex-col gap-5 text-left lg:text-right">
+              <h6
                 class="uppercase tracking-wider font-bold text-xs text-gray-500"
               >
-                Projects
+                About Us
+              </h6>
+              <h1 class="text-5xl font-extrabold text-gray-900">Who We Are</h1>
+              <p class="text-gray-500">
+                Founded with a passion for coding excellence, we specialize in
+                crafting bespoke digital solutions that empower businesses to
+                thrive online. With a deep commitment to quality and
+                cutting-edge technologies, , we transform your ideas into
+                impactful realities. Whether you're a startup or an established
+                enterprise, trust BrosCode to elevate your digital presence with
+                tailored, scalable solutions that deliver results. Join us on
+                this exciting journey of innovation and growth.
               </p>
             </div>
-            <!-- Text -->
-            <div class="text-sm text-gray-500 flex-1">
-              Our success is built on the trust and satisfaction of over 10
-              clients across various industries. Our commitment to delivering
-              exceptional web solutions and personalized service has helped
-              businesses achieve their digital goals.
+            <!-- Metrics -->
+            <div class="flex flex-1 flex-col gap-3">
+              <!-- Projects -->
+              <div class="flex flex-col lg:flex-row gap-5 sm:gap-20">
+                <!-- Total -->
+                <div class="flex flex-col gap-3 flex-[0.2]">
+                  <h3 class="text-5xl font-extrabold text-gray-900">
+                    10<sup class="text-primary-500">+</sup>
+                  </h3>
+                  <p
+                    class="uppercase tracking-wider font-bold text-xs text-gray-500"
+                  >
+                    Projects
+                  </p>
+                </div>
+                <!-- Text -->
+                <div class="text-sm text-gray-500 flex-1">
+                  Our success is built on the trust and satisfaction of over 10
+                  clients across various industries. Our commitment to
+                  delivering exceptional web solutions and personalized service
+                  has helped businesses achieve their digital goals.
+                </div>
+              </div>
+              <!-- Clients -->
+              <div class="flex flex-col lg:flex-row gap-5 sm:gap-20">
+                <!-- Total -->
+                <div class="flex flex-col gap-3 flex-[0.2]">
+                  <h3 class="text-5xl font-extrabold text-gray-900">
+                    7<sup class="text-primary-500">+</sup>
+                  </h3>
+                  <p
+                    class="uppercase tracking-wider font-bold text-xs text-gray-500"
+                  >
+                    Happy Clients
+                  </p>
+                </div>
+                <!-- Text -->
+                <div class="text-sm text-gray-500 flex-1">
+                  Our success is reflected in the smiles of over 7 happy
+                  clients. Our dedication to delivering top-notch web solutions
+                  and exceptional customer service has earned us the trust and
+                  satisfaction of businesses across various industries.
+                </div>
+              </div>
+              <!-- Experience -->
+              <div class="flex flex-col lg:flex-row gap-5 sm:gap-20">
+                <!-- Total -->
+                <div class="flex flex-col gap-3 flex-[0.2]">
+                  <h3 class="text-5xl font-extrabold text-gray-900">
+                    3<sup class="text-primary-500">+</sup>
+                  </h3>
+                  <p
+                    class="uppercase tracking-wider font-bold text-xs text-gray-500"
+                  >
+                    Years of Experience
+                  </p>
+                </div>
+                <!-- Text -->
+                <div class="text-sm text-gray-500 flex-1">
+                  With over 3 years of experience in the web development
+                  industry, BrosCode has a proven track record of delivering
+                  high-quality, innovative solutions. Our expertise spans
+                  various technologies and industries, allowing us to tailor our
+                  services to meet your unique needs.
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Clients -->
-          <div class="flex gap-20">
-            <!-- Total -->
-            <div class="flex flex-col gap-3 flex-[0.2]">
-              <h3 class="text-5xl font-extrabold text-gray-900">
-                7<sup class="text-primary-500">+</sup>
-              </h3>
-              <p
-                class="uppercase tracking-wider font-bold text-xs text-gray-500"
-              >
-                Happy Clients
-              </p>
-            </div>
-            <!-- Text -->
-            <div class="text-sm text-gray-500 flex-1">
-              Our success is reflected in the smiles of over 7 happy clients.
-              Our dedication to delivering top-notch web solutions and
-              exceptional customer service has earned us the trust and
-              satisfaction of businesses across various industries.
-            </div>
-          </div>
-          <!-- Experience -->
-          <div class="flex gap-20">
-            <!-- Total -->
-            <div class="flex flex-col gap-3 flex-[0.2]">
-              <h3 class="text-5xl font-extrabold text-gray-900">
-                3<sup class="text-primary-500">+</sup>
-              </h3>
-              <p
-                class="uppercase tracking-wider font-bold text-xs text-gray-500"
-              >
-                Years of Experience
-              </p>
-            </div>
-            <!-- Text -->
-            <div class="text-sm text-gray-500 flex-1">
-              With over 3 years of experience in the web development industry,
-              BrosCode has a proven track record of delivering high-quality,
-              innovative solutions. Our expertise spans various technologies and
-              industries, allowing us to tailor our services to meet your unique
-              needs.
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Our Services -->
-      <div class="flex flex-col gap-5 mt-20 h-dvh" id="services">
-        <!-- Services Text -->
-        <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
-          Our Services
-        </h6>
-        <h1 class="text-5xl font-extrabold text-gray-900">We Provide</h1>
-        <p class="text-gray-500">
-          At Broscode, we offer a comprehensive range of web development
-          services to meet your business needs. From custom website design and
-          development to full-stack solutions our team is equipped to handle
-          projects of any scale. We also specialize in e-commerce solutions,
-          revamping outdated websites and graphics designing to help your
-          business succeed online.
-        </p>
-        <!-- Service Cards -->
-        <div class="flex gap-5">
-          <!-- website card -->
-          <div
-            class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-1/4 items-center"
-          >
-            <img class="w-36 h-36" src="./assets/web.svg" alt="website-image" />
-            <h5 class="text-gray-900 font-semibold">Website Development</h5>
-            <p class="text-gray-500 text-sm">
-              We create custom websites from scratch using pure code. Unlike
-              Shopify, WordPress, or Wix, our HTML, CSS, and JavaScript
-              solutions are unique, optimized, and tailored to your needs. Enjoy
-              greater flexibility, better SEO, and enhanced user experience with
-              our high-performance, scalable, and secure websites.
-            </p>
-          </div>
-          <!-- web apps card -->
-          <div
-            class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-1/4 items-center"
-          >
-            <img
-              class="w-36 h-36"
-              src="./assets/server.svg"
-              alt="website-image"
-            />
-            <h5 class="text-gray-900 font-semibold">
-              Web Applications Development
-            </h5>
-            <p class="text-gray-500 text-sm">
-              We build custom web applications from scratch using pure code.
-              Unlike off-the-shelf solutions, our full stack applications are
-              tailored to your needs, offering unmatched performance, security,
-              and scalability. Experience greater flexibility, better
-              integration, and enhanced functionality with our bespoke web
-              applications.
-            </p>
-          </div>
-          <!-- website redesign card -->
-          <div
-            class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-1/4 items-center"
-          >
-            <img
-              class="w-36 h-36"
-              src="./assets/redesign.svg"
-              alt="website-image"
-            />
-            <h5 class="text-gray-900 font-semibold">Website Redesign</h5>
-            <p class="text-gray-500 text-sm">
-              We revitalize your website for a fresh, modern appeal. Our browser
-              native solutions outperform template-based options, ensuring
-              top-notch performance, security, and SEO. Experience a
-              distinctive, tailored user experience that elevates your brand and
-              captivates your audience.
-            </p>
-          </div>
-          <!-- website redesign card -->
-          <div
-            class="flex flex-col bg-white rounded-2xl shadow-cssScan p-5 gap-5 w-1/4 items-center"
-          >
-            <img
-              class="w-36 h-36"
-              src="./assets/graphics.svg"
-              alt="graphics-image"
-            />
-            <h5 class="text-gray-900 font-semibold">Graphics Design</h5>
-            <p class="text-gray-500 text-sm">
-              We offer expert graphic design services for creating custom
-              visiting cards, wedding invitations, and more. Our talented
-              designers specialize in crafting unique and visually striking
-              designs that reflect your personal or business style.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Our Works -->
-      <div class="flex flex-col gap-5 mt-20" id="works">
-        <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
-          Our Works
-        </h6>
-        <h1 class="text-5xl font-extrabold text-gray-900">Work Showcase</h1>
-        <!-- Alanis Beauty Parlour -->
-        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
-          <img
-            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
-            src="./assets/works/home.png"
-            alt="alanis-landing-page"
-            id="alanis"
-          />
-          <div class="flex flex-col flex-1 justify-between gap-2">
-            <div class="flex flex-col gap-3">
-              <h5 class="text-gray-900 font-extrabold uppercase">
-                Alanis Beauty Parlour
-              </h5>
-              <p class="text-gray-500 text-sm">
-                We elevated a beauty parlour's outdated design to international
-                standards of elegance and functionality. Our modern redesign
-                enhances customer experience, aligns with global trends, and
-                elevates brand presence.
-              </p>
-              <q class="text-gray-900 text-sm italic font-semibold"
-                >Thank You BrosCode for the fantastic website revamp! The new
-                design perfectly captures our brand's essence and has
-                significantly improved our online presence. We've received
-                numerous compliments from our clients. Great job! -
-                Proprietor</q
-              >
-            </div>
-            <div class="flex justify-center">
-              <a
-                href="https://alanisbeautyparlour.com/home"
-                class="cursor-pointer"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><button
-                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
-                >
-                  Visit
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Wallit -->
-        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
-          <img
-            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
-            src="./assets/works/wallit1.png"
-            alt="alanis-landing-page"
-            id="wallit"
-          />
-          <div class="flex flex-col flex-1 justify-between gap-2">
-            <div class="flex flex-col gap-3">
-              <h5 class="text-gray-900 font-extrabold uppercase">Wallit</h5>
-              <p class="text-gray-500 text-sm">
-                We designed a landing page for a finance management tool named
-                "Wallit". The site highlights the app's benefits, user
-                testimonials and available subscription plans.
-              </p>
-              <q class="text-gray-900 text-sm italic font-semibold"
-                >Impressive UI/UX! The Wallit page is clean, intuitive, and
-                visually engaging, demonstrating excellent attention to detail -
-                UI/UX Designer</q
-              >
-            </div>
-            <div class="flex justify-center">
-              <a
-                href="https://jentjames.github.io/landing-pages/wallit/"
-                class="cursor-pointer"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><button
-                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
-                >
-                  Visit
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Firewatch -->
-        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
-          <img
-            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
-            src="./assets/works/firewatch1.png"
-            alt="alanis-landing-page"
-            id="firewatch"
-          />
-          <div class="flex flex-col flex-1 justify-between gap-2">
-            <div class="flex flex-col gap-3">
-              <h5 class="text-gray-900 font-extrabold uppercase">Firewatch</h5>
-              <p class="text-gray-500 text-sm">
-                We developed a web application named "Firewatch" for XL plus
-                screens showcasing popular and trending movies, TV series, and
-                celebrities.
-              </p>
-              <q class="text-gray-900 text-sm italic font-semibold"
-                >Firewatch has transformed how I discover trending content. The
-                home page is user-friendly, visually appealing, and packed with
-                useful features. It's my go-to app now!</q
-              >
-            </div>
-            <div class="flex justify-center">
-              <a
-                href="https://firewatch-f3d20.web.app/home"
-                class="cursor-pointer"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><button
-                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
-                >
-                  Visit
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- RPS -->
-        <div class="flex p-3 gap-5 w-full rounded-2xl bg-primary-50">
-          <img
-            class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
-            src="./assets/works/rps1.png"
-            alt="alanis-landing-page"
-            id="rps"
-          />
-          <div class="flex flex-col flex-1 justify-between gap-2">
-            <div class="flex flex-col gap-3">
-              <h5 class="text-gray-900 font-extrabold uppercase">
-                Rock Paper Scissors
-              </h5>
-              <p class="text-gray-500 text-sm">
-                We designed and implemented a web-based "Rock Paper Scissors"
-                game specifically as a mini project tailored for a high school
-                student's educational experience.
-              </p>
-              <q class="text-gray-900 text-sm italic font-semibold"
-                >I thoroughly enjoyed playing the web-based 'Rock Paper
-                Scissors' game developed by BrosCode for my school project. It
-                was both entertaining and educational, helping me grasp
-                fundamental concepts in web development.</q
-              >
-            </div>
-            <div class="flex justify-center">
-              <a
-                href="https://jhonsfranky17.github.io/Rock-Paper-Scissors/"
-                class="cursor-pointer"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><button
-                  class="px-20 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
-                >
-                  Visit
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team -->
-    <div
-      class="w-full bg-custom-gradient px-20 py-40 mt-20 flex gap-10 bg-cover"
-    >
-      <div class="flex flex-1 flex-col gap-5 text-left">
-        <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
-          Team
-        </h6>
-        <h1 class="text-5xl font-extrabold text-primary-500">Who We Are</h1>
-        <p class="text-slate-100">
-          Franklin and Jen, two visionary college classmates and coding experts,
-          joined forces to establish BrosCode, a premier web development
-          freelancing team. With their combined technical prowess and innovative
-          thinking, they create seamless, responsive, and user-centric websites
-          that elevate digital experiences. BrosCode stands as a testament to
-          their unwavering commitment to excellence, quality, and the
-          transformative power of a compelling online presence.
-        </p>
-      </div>
-      <!-- Team Members -->
-      <div class="flex-1 flex gap-5">
-        <!-- Jen -->
-        <div class="flex flex-col gap-5">
-          <img
-            src="./assets/jen.jpg"
-            alt="Jen"
-            class="w-96 rounded-xl h-[29rem]"
-          />
-          <div class="flex flex-col gap-1">
-            <h3 class="text-slate-50 text-center font-semibold">
-              Jen Thomas James
-            </h3>
-            <h6 class="text-center text-gray-500 text-sm font-medium">
-              Full Stack Developer
+          <!-- Our Services -->
+          <div class="flex flex-col gap-5" id="services">
+            <!-- Services Text -->
+            <h6
+              class="uppercase tracking-wider font-bold text-xs text-gray-500"
+            >
+              Our Services
             </h6>
+            <h1 class="text-5xl font-extrabold text-gray-900">We Provide</h1>
+            <p class="text-gray-500">
+              At Broscode, we offer a comprehensive range of web development
+              services to meet your business needs. From custom website design
+              and development to full-stack solutions our team is equipped to
+              handle projects of any scale. We also specialize in e-commerce
+              solutions, revamping outdated websites and graphics designing to
+              help your business succeed online.
+            </p>
+            <!-- Service Cards -->
+            <div class="flex flex-col md:flex-row gap-5">
+              <!-- website card -->
+              <div
+                class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full md:w-1/4 items-center"
+              >
+                <img
+                  class="w-36 h-36"
+                  src="./assets/web.svg"
+                  alt="website-image"
+                />
+                <h5 class="text-gray-900 font-semibold">Website Development</h5>
+                <p class="text-gray-500 text-sm">
+                  We create custom websites from scratch using pure code. Unlike
+                  Shopify, WordPress, or Wix, our HTML, CSS, and JavaScript
+                  solutions are unique, optimized, and tailored to your needs.
+                  Enjoy greater flexibility, better SEO, and enhanced user
+                  experience with our high-performance, scalable, and secure
+                  websites.
+                </p>
+              </div>
+              <!-- web apps card -->
+              <div
+                class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full md:w-1/4 items-center"
+              >
+                <img
+                  class="w-36 h-36"
+                  src="./assets/server.svg"
+                  alt="website-image"
+                />
+                <h5 class="text-gray-900 font-semibold">
+                  Web Applications Development
+                </h5>
+                <p class="text-gray-500 text-sm">
+                  We build custom web applications from scratch using pure code.
+                  Unlike off-the-shelf solutions, our full stack applications
+                  are tailored to your needs, offering unmatched performance,
+                  security, and scalability. Experience greater flexibility,
+                  better integration, and enhanced functionality with our
+                  bespoke web applications.
+                </p>
+              </div>
+              <!-- website redesign card -->
+              <div
+                class="flex flex-col bg-white p-5 gap-5 rounded-2xl shadow-cssScan w-full md:w-1/4 items-center"
+              >
+                <img
+                  class="w-36 h-36"
+                  src="./assets/redesign.svg"
+                  alt="website-image"
+                />
+                <h5 class="text-gray-900 font-semibold">Website Redesign</h5>
+                <p class="text-gray-500 text-sm">
+                  We revitalize your website for a fresh, modern appeal. Our
+                  browser native solutions outperform template-based options,
+                  ensuring top-notch performance, security, and SEO. Experience
+                  a distinctive, tailored user experience that elevates your
+                  brand and captivates your audience.
+                </p>
+              </div>
+              <!-- website redesign card -->
+              <div
+                class="flex flex-col bg-white rounded-2xl shadow-cssScan p-5 gap-5 w-full md:w-1/4 items-center"
+              >
+                <img
+                  class="w-36 h-36"
+                  src="./assets/graphics.svg"
+                  alt="graphics-image"
+                />
+                <h5 class="text-gray-900 font-semibold">Graphics Design</h5>
+                <p class="text-gray-500 text-sm">
+                  We offer expert graphic design services for creating custom
+                  visiting cards, wedding invitations, and more. Our talented
+                  designers specialize in crafting unique and visually striking
+                  designs that reflect your personal or business style.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Franklin -->
-        <div class="flex flex-col gap-5">
-          <img
-            src="./assets/franklin-removebg-preview.png"
-            alt="franklin"
-            class="w-96 rounded-xl h-[29rem]"
-          />
-          <div class="flex flex-col gap-1">
-            <h3 class="text-slate-50 text-center font-semibold">
-              Franklin Jetty Johnson
-            </h3>
-            <h6 class="text-center text-gray-500 text-sm font-medium">
-              Full Stack Developer
+          <!-- Our Works -->
+          <div class="flex flex-col gap-5" id="works">
+            <h6
+              class="uppercase tracking-wider font-bold text-xs text-gray-500"
+            >
+              Our Works
             </h6>
+            <h1 class="text-5xl font-extrabold text-gray-900">Work Showcase</h1>
+            <!-- Alanis Beauty Parlour -->
+            <div
+              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+            >
+              <img
+                class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+                src="./assets/works/home.png"
+                alt="alanis-landing-page"
+                id="alanis"
+              />
+              <div class="flex flex-col flex-1 justify-between gap-5">
+                <div class="flex flex-col gap-3">
+                  <h5 class="text-gray-900 font-extrabold uppercase">
+                    Alanis Beauty Parlour
+                  </h5>
+                  <p class="text-gray-500 text-sm">
+                    We elevated a beauty parlour's outdated design to
+                    international standards of elegance and functionality. Our
+                    modern redesign enhances customer experience, aligns with
+                    global trends, and elevates brand presence.
+                  </p>
+                  <q class="text-gray-900 text-sm italic font-semibold"
+                    >Thank You BrosCode for the fantastic website revamp! The
+                    new design perfectly captures our brand's essence and has
+                    significantly improved our online presence. We've received
+                    numerous compliments from our clients. Great job! -
+                    Proprietor</q
+                  >
+                </div>
+                <a
+                  href="https://alanisbeautyparlour.com/home"
+                  class="cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button
+                    class="px-20 py-5 sm:py-3 w-full text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full"
+                  >
+                    Visit
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- Wallit -->
+            <div
+              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+            >
+              <img
+                class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+                src="./assets/works/wallit1.png"
+                alt="alanis-landing-page"
+                id="wallit"
+              />
+              <div class="flex flex-col flex-1 justify-between gap-5">
+                <div class="flex flex-col gap-3">
+                  <h5 class="text-gray-900 font-extrabold uppercase">Wallit</h5>
+                  <p class="text-gray-500 text-sm">
+                    We designed a landing page for a finance management tool
+                    named "Wallit". The site highlights the app's benefits, user
+                    testimonials and available subscription plans.
+                  </p>
+                  <q class="text-gray-900 text-sm italic font-semibold"
+                    >Impressive UI/UX! The Wallit page is clean, intuitive, and
+                    visually engaging, demonstrating excellent attention to
+                    detail - UI/UX Designer</q
+                  >
+                </div>
+                <a
+                  href="https://jentjames.github.io/landing-pages/wallit/"
+                  class="cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button
+                    class="px-20 py-5 sm:py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                  >
+                    Visit
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- Firewatch -->
+            <div
+              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+            >
+              <img
+                class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+                src="./assets/works/firewatch1.png"
+                alt="alanis-landing-page"
+                id="firewatch"
+              />
+              <div class="flex flex-col flex-1 justify-between gap-5">
+                <div class="flex flex-col gap-3">
+                  <h5 class="text-gray-900 font-extrabold uppercase">
+                    Firewatch
+                  </h5>
+                  <p class="text-gray-500 text-sm">
+                    We developed a web application named "Firewatch" for XL plus
+                    screens showcasing popular and trending movies, TV series,
+                    and celebrities.
+                  </p>
+                  <q class="text-gray-900 text-sm italic font-semibold"
+                    >Firewatch has transformed how I discover trending content.
+                    The home page is user-friendly, visually appealing, and
+                    packed with useful features. It's my go-to app now!</q
+                  >
+                </div>
+                <a
+                  href="https://firewatch-f3d20.web.app/home"
+                  class="cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button
+                    class="px-20 py-5 sm:py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                  >
+                    Visit
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- RPS -->
+            <div
+              class="flex flex-col md:flex-row p-3 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+            >
+              <img
+                class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
+                src="./assets/works/rps1.png"
+                alt="alanis-landing-page"
+                id="rps"
+              />
+              <div class="flex flex-col flex-1 justify-between gap-5">
+                <div class="flex flex-col gap-3">
+                  <h5 class="text-gray-900 font-extrabold uppercase">
+                    Rock Paper Scissors
+                  </h5>
+                  <p class="text-gray-500 text-sm">
+                    We designed and implemented a web-based "Rock Paper
+                    Scissors" game specifically as a mini project tailored for a
+                    high school student's educational experience.
+                  </p>
+                  <q class="text-gray-900 text-sm italic font-semibold"
+                    >I thoroughly enjoyed playing the web-based 'Rock Paper
+                    Scissors' game developed by BrosCode for my school project.
+                    It was both entertaining and educational, helping me grasp
+                    fundamental concepts in web development.</q
+                  >
+                </div>
+                <a
+                  href="https://jhonsfranky17.github.io/Rock-Paper-Scissors/"
+                  class="cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><button
+                    class="px-20 py-5 sm:py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full w-full"
+                  >
+                    Visit
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Team -->
+          <div
+            class="hidden w-full bg-custom-gradient rounded-2xl px-20 py-40 md:flex gap-10 bg-cover"
+          >
+            <div class="flex flex-1 flex-col gap-5 text-left">
+              <h6
+                class="uppercase tracking-wider font-bold text-xs text-gray-500"
+              >
+                Team
+              </h6>
+              <h1 class="text-5xl font-extrabold text-primary-500">
+                Who We Are
+              </h1>
+              <p class="text-slate-100">
+                Franklin and Jen, two visionary college classmates and coding
+                experts, joined forces to establish BrosCode, a premier web
+                development freelancing team. With their combined technical
+                prowess and innovative thinking, they create seamless,
+                responsive, and user-centric websites that elevate digital
+                experiences. BrosCode stands as a testament to their unwavering
+                commitment to excellence, quality, and the transformative power
+                of a compelling online presence.
+              </p>
+            </div>
+            <!-- Team Members -->
+            <div class="flex-1 flex gap-5">
+              <!-- Jen -->
+              <div class="flex flex-col gap-5">
+                <img
+                  src="./assets/jen.jpg"
+                  alt="Jen"
+                  class="w-96 rounded-xl h-[29rem]"
+                />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-slate-50 text-center font-semibold">
+                    Jen Thomas James
+                  </h3>
+                  <h6 class="text-center text-gray-500 text-sm font-medium">
+                    Full Stack Developer
+                  </h6>
+                </div>
+              </div>
+              <!-- Franklin -->
+              <div class="flex flex-col gap-5">
+                <img
+                  src="./assets/franklin-removebg-preview.png"
+                  alt="franklin"
+                  class="w-96 rounded-xl h-[29rem]"
+                />
+                <div class="flex flex-col gap-1">
+                  <h3 class="text-slate-50 text-center font-semibold">
+                    Franklin Jetty Johnson
+                  </h3>
+                  <h6 class="text-center text-gray-500 text-sm font-medium">
+                    Full Stack Developer
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pricing -->
+          <div class="flex flex-col gap-5 px-0 md:px-20" id="pricing">
+            <h6
+              class="uppercase tracking-wider font-bold text-xs text-gray-500"
+            >
+              Pricing
+            </h6>
+            <h1 class="text-5xl font-extrabold text-gray-900">
+              Check Our Pricing
+            </h1>
+            <div class="flex flex-col md:flex-row gap-5 mt-5">
+              <!-- Basic Pricing -->
+              <div
+                class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50 w-full"
+              >
+                <!-- header -->
+                <div class="flex justify-between">
+                  <!-- Cost + Pricing Name -->
+                  <div class="flex flex-col gap-3">
+                    <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
+                    <p class="text-gray-500 font-semibold">
+                      From
+                      <span class="font-bold text-slate-900 text-2xl"
+                        >₹14,999</span
+                      >
+                      onwards!
+                    </p>
+                  </div>
+                </div>
+                <!-- Ideal for -->
+                <p class="text-gray-500 text-sm">
+                  Ideal for static or informational websites, a cost-effective
+                  solution for presenting essential information online. It
+                  features fixed content, ensuring fast load times, reliability,
+                  and easy maintenance.
+                </p>
+                <!-- Features -->
+                <ul class="flex flex-col gap-3 text-gray-500 font-bold">
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />1-3 Pages
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    3 Point Responsive
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    Content Creation
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    High Quality Images
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    Hosting Support
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
+                >
+                  Choose Package
+                </button>
+              </div>
+              <!-- Popular -->
+              <div
+                class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
+              >
+                <!-- header -->
+                <div class="flex justify-between">
+                  <!-- Cost + Pricing Name -->
+                  <div class="flex flex-col gap-3">
+                    <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
+                    <p class="text-gray-500 font-semibold">
+                      From
+                      <span class="font-bold text-slate-900 text-2xl"
+                        >₹14,999</span
+                      >
+                      onwards!
+                    </p>
+                  </div>
+                </div>
+                <!-- Ideal for -->
+                <p class="text-gray-500 text-sm">
+                  Ideal for static or informational websites, a cost-effective
+                  solution for presenting essential information online. It
+                  features fixed content, ensuring fast load times, reliability,
+                  and easy maintenance.
+                </p>
+                <!-- Features -->
+                <ul class="flex flex-col gap-3 text-gray-500 font-bold">
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />1-3 Pages
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    3 Point Responsive
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    Content Creation
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    High Quality Images
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    Hosting Support
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
+                >
+                  Choose Package
+                </button>
+              </div>
+              <!-- Premium -->
+              <div
+                class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
+              >
+                <!-- header -->
+                <div class="flex justify-between">
+                  <!-- Cost + Pricing Name -->
+                  <div class="flex flex-col gap-3">
+                    <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
+                    <p class="text-gray-500 font-semibold">
+                      From
+                      <span class="font-bold text-slate-900 text-2xl"
+                        >₹14,999</span
+                      >
+                      onwards!
+                    </p>
+                  </div>
+                </div>
+                <!-- Ideal for -->
+                <p class="text-gray-500 text-sm">
+                  Ideal for static or informational websites, a cost-effective
+                  solution for presenting essential information online. It
+                  features fixed content, ensuring fast load times, reliability,
+                  and easy maintenance.
+                </p>
+                <!-- Features -->
+                <ul class="flex flex-col gap-3 text-gray-500 font-bold">
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />1-3 Pages
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    3 Point Responsive
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    Content Creation
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    High Quality Images
+                  </li>
+                  <li class="flex gap-5">
+                    <img
+                      src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="tick"
+                    />
+                    Hosting Support
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
+                >
+                  Choose Package
+                </button>
+              </div>
+            </div>
+            <div class="mt-20"></div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Pricing -->
-    <div class="flex flex-col gap-5 mt-20 px-20" id="pricing">
-      <h6 class="uppercase tracking-wider font-bold text-xs text-gray-500">
-        Pricing
-      </h6>
-      <h1 class="text-5xl font-extrabold text-gray-900">Check Our Pricing</h1>
-      <div class="flex gap-5 mt-5">
-        <!-- Basic Pricing -->
-        <div
-          class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
-        >
-          <!-- header -->
-          <div class="flex justify-between">
-            <!-- Cost + Pricing Name -->
-            <div class="flex flex-col gap-3">
-              <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
-              <p class="text-gray-500 font-semibold">
-                From
-                <span class="font-bold text-slate-900 text-2xl">₹14,999</span>
-                onwards!
-              </p>
-            </div>
-          </div>
-          <!-- Ideal for -->
-          <p class="text-gray-500 text-sm">
-            Ideal for static or informational websites, a cost-effective
-            solution for presenting essential information online. It features
-            fixed content, ensuring fast load times, reliability, and easy
-            maintenance.
-          </p>
-          <!-- Features -->
-          <ul class="flex flex-col gap-3 text-gray-500 font-bold">
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />1-3 Pages
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              3 Point Responsive
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              Content Creation
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              High Quality Images
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              Hosting Support
-            </li>
-          </ul>
-          <button
-            class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
-          >
-            Choose Package
-          </button>
-        </div>
-        <!-- Popular -->
-        <div
-          class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
-        >
-          <!-- header -->
-          <div class="flex justify-between">
-            <!-- Cost + Pricing Name -->
-            <div class="flex flex-col gap-3">
-              <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
-              <p class="text-gray-500 font-semibold">
-                From
-                <span class="font-bold text-slate-900 text-2xl">₹14,999</span>
-                onwards!
-              </p>
-            </div>
-          </div>
-          <!-- Ideal for -->
-          <p class="text-gray-500 text-sm">
-            Ideal for static or informational websites, a cost-effective
-            solution for presenting essential information online. It features
-            fixed content, ensuring fast load times, reliability, and easy
-            maintenance.
-          </p>
-          <!-- Features -->
-          <ul class="flex flex-col gap-3 text-gray-500 font-bold">
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />1-3 Pages
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              3 Point Responsive
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              Content Creation
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              High Quality Images
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              Hosting Support
-            </li>
-          </ul>
-          <button
-            class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
-          >
-            Choose Package
-          </button>
-        </div>
-        <!-- Premium -->
-        <div
-          class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
-        >
-          <!-- header -->
-          <div class="flex justify-between">
-            <!-- Cost + Pricing Name -->
-            <div class="flex flex-col gap-3">
-              <h3 class="text-primary-500 font-bold text-xl">Basic</h3>
-              <p class="text-gray-500 font-semibold">
-                From
-                <span class="font-bold text-slate-900 text-2xl">₹14,999</span>
-                onwards!
-              </p>
-            </div>
-          </div>
-          <!-- Ideal for -->
-          <p class="text-gray-500 text-sm">
-            Ideal for static or informational websites, a cost-effective
-            solution for presenting essential information online. It features
-            fixed content, ensuring fast load times, reliability, and easy
-            maintenance.
-          </p>
-          <!-- Features -->
-          <ul class="flex flex-col gap-3 text-gray-500 font-bold">
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />1-3 Pages
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              3 Point Responsive
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              Content Creation
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              High Quality Images
-            </li>
-            <li class="flex gap-5">
-              <img
-                src="./assets/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="tick"
-              />
-              Hosting Support
-            </li>
-          </ul>
-          <button
-            class="w-full bg-primary-500 hover:bg-primary-600 py-3 rounded-lg text-white font-bold"
-          >
-            Choose Package
-          </button>
-        </div>
-      </div>
-      <div class="mt-20"></div>
     </div>
     <script src="./scripts/hero.js"></script>
     <script src="./scripts/works.js"></script>
