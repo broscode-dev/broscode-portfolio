@@ -39,11 +39,84 @@
       .fade-out {
         animation: fadeOut 1s forwards;
       }
+      #menu-items {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #menu-items.translate-x-0 {
+        transform: translateX(0);
+      }
+
+      #menu-items.translate-x-full {
+        transform: translateX(100%);
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
     <!-- Wrapper -->
     <div class="min-h-dvh w-full flex flex-col">
+      <!-- Menu -->
+      <nav class="md:hidden flex flex-col w-full py-3 px-10 sm:px-20">
+        <div class="flex justify-between w-full items-center">
+          <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
+          <button
+            id="hamburger-menu"
+            class="group relative inline-block w-[44px] h-[45px]"
+          >
+            <span
+              class="relative w-[30px] h-[6px] bg-gray-900 block after:absolute after:content-[''] after:mt-[12px] after:w-[30px] after:h-[6px] after:bg-gray-900 after:block after:left-[0] before:absolute before:content-[''] before:-mt-[12px] before:w-[30px] before:h-[6px] before:bg-gray-900 before:block before:left-[0]"
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Menu Items -->
+      <div
+        id="menu-items"
+        class="md:hidden p-5 fixed top-0 right-0 h-dvh w-3/4 bg-primary-500 transform translate-x-full duration-300 ease-in-out gap-10"
+      >
+        <button id="close-menu" class="w-full">
+          <img
+            src="./assets/works/icons8-right-arrow-48.png"
+            alt="close-menu"
+          />
+        </button>
+        <div class="flex flex-col justify-center gap-5 w-full">
+          <a class="cursor-pointer text-black font-bold" href="#home">Home</a>
+          <a class="cursor-pointer text-black font-bold" href="#about"
+            >About Us</a
+          >
+          <a class="cursor-pointer text-black font-bold" href="#services"
+            >Services</a
+          >
+          <a class="cursor-pointer text-black font-bold" href="#works">Works</a>
+          <a class="cursor-pointer text-black font-bold" href="#pricing"
+            >Pricing</a
+          >
+          <div
+            class="w-full flex justify-center items-center bg-primary-black py-2"
+          >
+            <div class="flex gap-3 items-center">
+              <a
+                href="https://www.instagram.com/broscode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./assets/social/icons8-instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/broscode/about/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/social/icons8-linkedin.svg" alt="linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- NavBar -->
       <nav
         class="hidden w-full md:flex items-center justify-between text-sm font-semibold text-gray-900 sticky top-0 left-0 z-10 bg-white px-20 py-5"
@@ -81,8 +154,11 @@
 
         <!-- social-links -->
         <div class="flex items-center gap-5">
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
+          <a href="https://www.instagram.com/broscode.dev/">Instagram</a>
+          <a
+            href="https://www.linkedin.com/company/broscode/about/?viewAsMember=true"
+            >LinkedIn</a
+          >
           <a
             class="px-4 py-2 text-white bg-primary-500 rounded-full hover:bg-primary-600"
             href="./contact.html"
@@ -92,7 +168,7 @@
         </div>
       </nav>
       <!-- Main Content -->
-      <div class="flex flex-col bg gap-20">
+      <div class="flex flex-col gap-20">
         <!-- Hero + We + You + Wave -->
         <div
           class="min-h-screen w-full flex flex-col items-center gap-20"
@@ -660,7 +736,11 @@
           <div class="flex-1 flex flex-col sm:flex-row sm:justify-center gap-5">
             <!-- Jen -->
             <div class="flex flex-col gap-5 w-full md:w-96">
-              <img src="./assets/jen.jpg" alt="Jen" class="rounded-xl h-[30rem] sm:h-full object-cover object-top" />
+              <img
+                src="./assets/jen.jpg"
+                alt="Jen"
+                class="h-[30rem] sm:h-full object-cover object-top rounded-xl"
+              />
               <div class="flex flex-col gap-1">
                 <h3 class="text-slate-50 text-center font-semibold">
                   Jen Thomas James
@@ -673,9 +753,9 @@
             <!-- Franklin -->
             <div class="flex flex-col gap-5 w-full md:w-96">
               <img
-                src="./assets/franklin-removebg-preview.png"
+                src="./assets/Franky.jpg"
                 alt="franklin"
-                class="rounded-xl h-[30rem] object-cover object-top"
+                class="h-[30rem] object-cover object-bottom rounded-xl"
               />
               <div class="flex flex-col gap-1">
                 <h3 class="text-slate-50 text-center font-semibold">
@@ -1053,5 +1133,6 @@
     </div>
     <script src="./scripts/hero.js"></script>
     <script src="./scripts/works.js"></script>
+    <script src="./scripts/nav.js"></script>
   </body>
 </html>
