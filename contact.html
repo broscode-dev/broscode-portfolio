@@ -14,85 +14,44 @@
     />
   </head>
   <body>
-    <!-- NavBar -->
-    <nav
-      class="w-full flex items-center justify-between text-sm font-semibold text-gray-900 bg-white p-5 fixed top-0"
+    <!-- Wrapper -->
+    <div
+      class="min-h-dvh flex xl:flex-row flex-col bg-gradient-to-br from-primary-200 to-primary-600"
     >
-      <!-- logo -->
-      <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
-      <!-- navs -->
-      <div class="flex items-center gap-7">
-        <a
-          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-          href="./index.html"
-          >Home</a
-        >
-        <a
-          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-          href="./index.html#about"
-          >About Us</a
-        >
-        <a
-          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-          href="./index.html#services"
-          >Services</a
-        >
-        <a
-          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-          href="./index.html#works"
-          >Works</a
-        >
-        <a
-          class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-500 after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-          href="./index.html#pricing"
-          >Pricing</a
-        >
-      </div>
-
-      <!-- social-links -->
-      <div class="flex items-center gap-5">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
-    </nav>
-    <!-- wrapper -->
-    <div class="w-dvh h-dvh flex gap-5">
       <!-- left section -->
       <div
-        class="flex-1 flex flex-col gap-5 justify-center bg-gradient-to-br from-primary-200 to-primary-600 p-10"
+        class="xl:flex-1 flex flex-col gap-5 2xl:p-40 xl:p-14 lg:p-20 md:p-10 sm:px-10 sm:pt-5 p-10 text-gray-900"
       >
-        <h1 class="text-7xl font-bold text-primary-50">Contact Us</h1>
-        <p class="text-lg font-semibold text-primary-50">
+        <h1 class="sm:text-7xl text-5xl font-black">Contact Us</h1>
+        <p class="sm:text-lg">
           Email, call or fill the form to learn how BrosCode can solve your
           business problem!
         </p>
         <div class="flex flex-col gap-2">
-          <p
-            class="text-primary-50 font-semibold text-lg underline underline-offset-2"
-          >
-            broscode2024@gmail.com
-          </p>
-          <p
-            class="text-primary-50 font-semibold text-lg underline underline-offset-2"
-          >
-            +91 8590492117
-          </p>
+          <p class="font-semibold">broscode2024@gmail.com</p>
+          <p class="font-semibold">+91 8590492117, +91 9072269490</p>
+          <a href="./index.html"
+            ><img src="./assets/icons8-left-arrow-50.png" alt="go-back"
+          /></a>
         </div>
       </div>
+
       <!-- right section -->
-      <div class="flex-1 flex flex-col gap-2 justify-center items-center">
-        <form class="flex flex-col gap-3 border p-7 rounded-lg">
+      <div
+        class="xl:flex-1 flex flex-col gap-2 2xl:p-40 xl:p-14 lg:p-20 md:p-10 sm:px-10 sm:pt-5 p-10"
+      >
+        <form class="flex flex-col gap-3 sm:p-7 p-3 border">
           <div class="flex flex-col gap-2">
-            <h1 class="text-slate-900 text-4xl font-bold">Get in touch</h1>
-            <p class="text-slate-900">You can reach us anytime</p>
+            <h1 class="text-gray-900 text-4xl font-black">Get in touch</h1>
+            <p class="text-gray-900">You can reach us anytime</p>
           </div>
-          <div class="flex gap-2">
+          <div class="flex sm:flex-row flex-col gap-2">
             <input
               type="text"
               name="firstname"
               id="firstname"
               placeholder="Firstname"
-              class="p-3 bg-slate-50 rounded-lg w-full border"
+              class="p-2 w-full"
               required
             />
             <input
@@ -100,7 +59,7 @@
               name="lastname"
               id="lastname"
               placeholder="Lastname"
-              class="p-3 bg-slate-50 rounded-lg w-full border"
+              class="p-2 w-full"
               required
             />
           </div>
@@ -109,7 +68,7 @@
             name="email"
             id="email"
             placeholder="Email"
-            class="p-3 bg-slate-50 rounded-lg w-full border"
+            class="p-2 w-full"
             required
           />
           <input
@@ -117,28 +76,29 @@
             name="phone"
             id="phone"
             placeholder="Phone Number"
-            class="p-3 bg-slate-50 rounded-lg w-full border"
+            class="p-2 w-full"
             required
           />
           <textarea
             name="message"
             id="message"
-            class="p-3 bg-slate-50 rounded-lg w-full border"
+            class="p-2 bg-slate-50 resize-none"
             placeholder="Message"
             required
             rows="10"
           ></textarea>
           <button
-            class="px-4 py-2 text-white bg-primary-500 rounded-full hover:bg-primary-600"
+            class="py-2 text-gray-900 bg-white font-bold"
             href="./contact.html"
             type="submit"
             id="submit_btn"
           >
-            Contact Us
+            Send message
           </button>
         </form>
       </div>
     </div>
+
     <script src="./scripts/contact.js"></script>
   </body>
 </html>
