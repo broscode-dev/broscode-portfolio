@@ -717,6 +717,15 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
 .border {
   border-width: 1px;
 }
@@ -957,6 +966,13 @@ video {
   --tw-shadow-colored: 0px 48px 100px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.outline-primary-500 {
+  outline-color: #fa541c;
+}
+.ring-primary-500 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(250 84 28 / var(--tw-ring-opacity));
+}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1108,6 +1124,25 @@ video {
 .hover\:after\:w-0:hover::after {
   content: var(--tw-content);
   width: 0px;
+}
+
+.focus\:outline-primary-500:focus {
+  outline-color: #fa541c;
+}
+
+.focus\:ring-primary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(250 84 28 / var(--tw-ring-opacity));
+}
+
+.active\:bg-primary-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 36 11 / var(--tw-bg-opacity));
+}
+
+.active\:ring-primary-500:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(250 84 28 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 640px) {

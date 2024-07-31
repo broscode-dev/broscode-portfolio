@@ -40,7 +40,7 @@
       <div
         class="xl:flex-1 flex flex-col gap-2 2xl:p-40 xl:p-14 lg:p-20 md:p-10 sm:px-10 sm:pt-5 p-10"
       >
-        <form class="flex flex-col gap-3 sm:p-7 p-3 border">
+        <form class="flex flex-col gap-3 sm:p-7 p-3 bg-primary-50 rounded-md">
           <div class="flex flex-col gap-2">
             <h1 class="text-gray-900 text-4xl font-black">Get in touch</h1>
             <p class="text-gray-900">You can reach us anytime</p>
@@ -51,7 +51,7 @@
               name="firstname"
               id="firstname"
               placeholder="Firstname"
-              class="p-2 w-full"
+              class="p-2 w-full border rounded-sm"
               required
             />
             <input
@@ -59,7 +59,7 @@
               name="lastname"
               id="lastname"
               placeholder="Lastname"
-              class="p-2 w-full"
+              class="p-2 w-full border rounded-sm"
               required
             />
           </div>
@@ -68,7 +68,7 @@
             name="email"
             id="email"
             placeholder="Email"
-            class="p-2 w-full"
+            class="p-2 w-full border rounded-sm"
             required
           />
           <input
@@ -76,19 +76,19 @@
             name="phone"
             id="phone"
             placeholder="Phone Number"
-            class="p-2 w-full"
             required
+            class="p-2 w-full border rounded-sm"
           />
           <textarea
             name="message"
             id="message"
-            class="p-2 bg-slate-50 resize-none"
+            class="p-2 border rounded-sm resize-none"
             placeholder="Message"
             required
             rows="10"
           ></textarea>
           <button
-            class="py-2 text-gray-900 bg-white font-bold"
+            class="py-2 text-primary-50 bg-primary-500 rounded-full hover:bg-primary-600 active:bg-primary-700 font-bold"
             href="./contact.html"
             type="submit"
             id="submit_btn"
