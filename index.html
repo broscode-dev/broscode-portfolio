@@ -62,13 +62,18 @@
       <nav class="md:hidden flex flex-col w-full py-3 px-10 sm:px-20">
         <div class="flex justify-between w-full items-center">
           <img src="./assets/logo-svg.svg" alt="logo" class="w-20" />
-          <button
-            id="hamburger-menu"
-            class="group relative inline-block w-[44px] h-[45px]"
-          >
-            <span
-              class="relative w-[30px] h-[6px] bg-gray-900 block after:absolute after:content-[''] after:mt-[12px] after:w-[30px] after:h-[6px] after:bg-gray-900 after:block after:left-[0] before:absolute before:content-[''] before:-mt-[12px] before:w-[30px] before:h-[6px] before:bg-gray-900 before:block before:left-[0]"
-            ></span>
+          <button id="hamburger-menu" class="group relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000"
+            >
+              <path
+                d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z"
+              />
+            </svg>
           </button>
         </div>
       </nav>
@@ -562,10 +567,12 @@
           </h6>
           <h1 class="text-5xl font-extrabold text-gray-900">Work Showcase</h1>
           <!-- All Works -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 m-auto gap-10"
+          >
             <!-- Alanis Beauty Parlour -->
             <div
-              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -607,7 +614,7 @@
             </div>
             <!-- Wallit -->
             <div
-              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -644,7 +651,7 @@
             </div>
             <!-- Firewatch -->
             <div
-              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="flex flex-col p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -683,7 +690,7 @@
             </div>
             <!-- RPS -->
             <div
-              class="flex flex-col 2xl:flex-row p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
+              class="xl:hidden flex flex-col p-5 gap-7 md:gap-5 w-full rounded-2xl bg-primary-50"
             >
               <img
                 class="flex-[0.2] h-[17rem] object-cover rounded-2xl border border-slate-200"
@@ -789,7 +796,10 @@
           <h1 class="text-5xl font-extrabold text-gray-900">
             Check Our Pricing
           </h1>
-          <div class="flex flex-col xl:flex-row gap-5 mt-5">
+          <!-- Pricing Cards -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 mt-5"
+          >
             <!-- Basic Pricing -->
             <div
               class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50 w-full"
@@ -1009,7 +1019,7 @@
             </div>
             <!-- Premium -->
             <div
-              class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50"
+              class="flex flex-col flex-1 gap-10 p-10 bg-white rounded-2xl shadow-cssScan border border-slate-50 lg:col-span-2 xl:col-span-1"
             >
               <!-- header -->
               <div class="flex justify-between">
@@ -1140,54 +1150,54 @@
               </div>
             </div>
           </div>
-          <!-- Footer -->
-          <div class="sm:mt-40 mt-20 flex flex-col pb-5 gap-5">
-            <hr class="border border-gray-200" />
-            <div class="flex sm:flex-row flex-col gap-10 justify-evenly">
-              <div>
-                <img src="./assets/logo.png" alt="logo" class="w-32" />
-              </div>
-              <div class="flex flex-col gap-2">
-                <h6>Email: broscode2024@gmail.com</h6>
-                <h6>Phone: +91 9072269490</h6>
-                <div class="flex gap-3">
-                  <a
-                    href="https://www.instagram.com/broscode.dev/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="./assets/social/icons8-instagram.svg"
-                      alt="instagram"
-                    />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/broscode/about/?viewAsMember=true"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    ><img
-                      src="./assets/social/icons8-linkedin.svg"
-                      alt="linkedin"
-                  /></a>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 text-gray-900">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#works">Works</a>
-                <a href="#pricing">Pricing</a>
+        </div>
+        <!-- Footer -->
+        <div class="sm:mt-40 mt-20 flex flex-col pb-5 gap-5 px-5">
+          <hr class="border border-gray-200" />
+          <div class="flex sm:flex-row flex-col gap-10 justify-evenly">
+            <div>
+              <img src="./assets/logo.png" alt="logo" class="w-32" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <h6>Email: broscode2024@gmail.com</h6>
+              <h6>Phone: +91 9072269490</h6>
+              <div class="flex gap-3">
+                <a
+                  href="https://www.instagram.com/broscode.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/social/icons8-instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/broscode/about/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./assets/social/icons8-linkedin.svg"
+                    alt="linkedin"
+                /></a>
               </div>
             </div>
+            <div class="flex flex-col gap-3 text-gray-900">
+              <a href="#home">Home</a>
+              <a href="#about">About Us</a>
+              <a href="#services">Services</a>
+              <a href="#works">Works</a>
+              <a href="#pricing">Pricing</a>
+            </div>
+          </div>
 
-            <div class="flex justify-center items-center gap-2">
-              <img
-                src="./assets/icons8-copyright-50.png"
-                alt="copyright"
-                class="w-5"
-              />
-              <h5 class="font-semibold">BrosCode All Rights Reserved</h5>
-            </div>
+          <div class="flex justify-center items-center gap-2">
+            <img
+              src="./assets/icons8-copyright-50.png"
+              alt="copyright"
+              class="w-5"
+            />
+            <h5 class="font-semibold">BrosCode All Rights Reserved</h5>
           </div>
         </div>
       </div>
